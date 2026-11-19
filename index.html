@@ -1,0 +1,2260 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>童颜长辈漫画_原创漫画品牌_温暖陪伴的漫画内容社区</title>
+<meta name="description" content="童颜长辈漫画官方网站，专注原创漫画内容与创作者社区的漫画品牌，汇聚童颜长辈漫画精品内容、创作者动态与企业资讯，以温暖陪伴讲述每一段真实故事。">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%233b2f5e'/%3E%3Ccircle cx='24' cy='28' r='9' fill='%23ffd9a0'/%3E%3Ccircle cx='44' cy='34' r='7' fill='%23f7a8c0'/%3E%3Cpath d='M14 50c6-8 24-8 34-2' stroke='%23ffffff' stroke-width='3' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+<style>
+:root{
+  --ty-color-ink:#201a33;
+  --ty-color-ink-soft:#4b4363;
+  --ty-color-muted:#7d7694;
+  --ty-color-brand:#6a4fb6;
+  --ty-color-brand-deep:#3b2f5e;
+  --ty-color-accent:#f7a8c0;
+  --ty-color-accent-soft:#ffe3ec;
+  --ty-color-glow:#ffd9a0;
+  --ty-color-mint:#8fd6c0;
+  --ty-color-bg:#faf7fd;
+  --ty-color-panel:#ffffff;
+  --ty-color-line:#e8e2f2;
+  --ty-radius-lg:22px;
+  --ty-radius-md:14px;
+  --ty-radius-sm:9px;
+  --ty-shadow-soft:0 10px 30px rgba(59,47,94,.08);
+  --ty-shadow-hover:0 18px 42px rgba(59,47,94,.16);
+  --ty-sticky-height:118px;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,"Segoe UI",sans-serif;
+  background:var(--ty-color-bg);
+  color:var(--ty-color-ink);
+  line-height:1.75;
+  font-size:16px;
+  -webkit-font-smoothing:antialiased;
+}
+img,svg{display:block;max-width:100%;}
+a{color:inherit;text-decoration:none;}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit;}
+ul{list-style:none;}
+section{scroll-margin-top:calc(var(--ty-sticky-height) + 14px);}
+
+.ty-page-wrap{width:min(1180px,92vw);margin:0 auto;}
+
+/* ---------- 公告条 ---------- */
+.ty-notice-bar{
+  background:linear-gradient(90deg,#3b2f5e,#6a4fb6 60%,#8b6ee0);
+  color:#fff;
+  font-size:13.5px;
+  letter-spacing:.3px;
+}
+.ty-notice-inner{
+  display:flex;align-items:center;gap:14px;
+  padding:9px 0;
+  width:min(1180px,92vw);margin:0 auto;
+  overflow:hidden;
+}
+.ty-notice-label{
+  flex:0 0 auto;
+  background:rgba(255,255,255,.18);
+  border-radius:999px;
+  padding:1px 12px;
+  font-size:12px;
+  font-weight:600;
+  letter-spacing:1px;
+}
+.ty-notice-track{
+  flex:1 1 auto;
+  display:flex;gap:34px;
+  overflow:hidden;
+  white-space:nowrap;
+  -webkit-mask-image:linear-gradient(90deg,transparent,#000 4%,#000 96%,transparent);
+  mask-image:linear-gradient(90deg,transparent,#000 4%,#000 96%,transparent);
+}
+.ty-notice-item{flex:0 0 auto;opacity:.95;}
+.ty-notice-item b{color:var(--ty-color-glow);font-weight:600;}
+.ty-notice-more{
+  flex:0 0 auto;
+  font-size:12.5px;
+  color:var(--ty-color-glow);
+  border-bottom:1px dashed rgba(255,217,160,.6);
+  padding-bottom:1px;
+}
+
+/* ---------- 页头 ---------- */
+.ty-header{
+  position:sticky;top:0;z-index:80;
+  background:rgba(250,247,253,.92);
+  backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--ty-color-line);
+}
+.ty-header-inner{
+  display:flex;align-items:center;gap:26px;
+  padding:14px 0;
+  width:min(1180px,92vw);margin:0 auto;
+}
+.ty-brand{display:flex;align-items:center;gap:11px;flex:0 0 auto;}
+.ty-brand-mark{
+  width:42px;height:42px;border-radius:13px;
+  background:linear-gradient(135deg,#3b2f5e,#6a4fb6 55%,#9b7fe6);
+  display:grid;place-items:center;
+  box-shadow:0 6px 16px rgba(106,79,182,.3);
+}
+.ty-brand-mark svg{width:26px;height:26px;}
+.ty-brand-text strong{
+  display:block;font-size:17px;letter-spacing:1px;line-height:1.2;
+}
+.ty-brand-text span{
+  display:block;font-size:11px;color:var(--ty-color-muted);letter-spacing:2.2px;
+}
+.ty-nav{display:flex;gap:4px;margin-left:auto;flex-wrap:wrap;}
+.ty-nav a{
+  font-size:14.5px;padding:7px 13px;border-radius:999px;
+  color:var(--ty-color-ink-soft);transition:.22s;white-space:nowrap;
+}
+.ty-nav a:hover{background:#efe9fb;color:var(--ty-color-brand-deep);}
+.ty-header-tools{display:flex;align-items:center;gap:10px;flex:0 0 auto;}
+.ty-search{
+  display:flex;align-items:center;gap:6px;
+  background:#fff;border:1px solid var(--ty-color-line);
+  border-radius:999px;padding:6px 6px 6px 14px;
+  transition:.24s;
+}
+.ty-search:focus-within{border-color:var(--ty-color-brand);box-shadow:0 0 0 3px rgba(106,79,182,.12);}
+.ty-search input{
+  border:none;outline:none;background:transparent;
+  width:146px;font-size:13.5px;color:var(--ty-color-ink);
+}
+.ty-search input::placeholder{color:#b3adc4;}
+.ty-search button{
+  background:var(--ty-color-brand);color:#fff;
+  border-radius:999px;padding:5px 13px;font-size:13px;
+  transition:.22s;
+}
+.ty-search button:hover{background:var(--ty-color-brand-deep);}
+.ty-menu-toggle{
+  display:none;width:42px;height:38px;border-radius:10px;
+  border:1px solid var(--ty-color-line);background:#fff;
+  font-size:17px;color:var(--ty-color-brand-deep);
+}
+.ty-search-tip{
+  font-size:12.5px;color:var(--ty-color-brand);
+  background:#f2edfc;border-radius:8px;
+  padding:6px 12px;margin-top:8px;display:none;
+  width:min(1180px,92vw);margin-left:auto;margin-right:auto;
+}
+.ty-search-tip.ty-tip-on{display:block;}
+
+/* ---------- 首屏 ---------- */
+.ty-hero{padding:52px 0 20px;position:relative;overflow:hidden;}
+.ty-hero::before{
+  content:"";position:absolute;inset:-120px auto auto -120px;
+  width:420px;height:420px;border-radius:50%;
+  background:radial-gradient(circle,rgba(247,168,192,.28),transparent 66%);
+  pointer-events:none;
+}
+.ty-hero::after{
+  content:"";position:absolute;right:-140px;bottom:-160px;
+  width:460px;height:460px;border-radius:50%;
+  background:radial-gradient(circle,rgba(143,214,192,.24),transparent 66%);
+  pointer-events:none;
+}
+.ty-hero-grid{
+  display:grid;grid-template-columns:1.05fr .95fr;gap:46px;align-items:center;
+  position:relative;z-index:2;
+}
+.ty-hero-badge{
+  display:inline-flex;align-items:center;gap:8px;
+  background:#fff;border:1px solid var(--ty-color-line);
+  border-radius:999px;padding:5px 14px 5px 6px;
+  font-size:12.5px;color:var(--ty-color-ink-soft);
+  box-shadow:var(--ty-shadow-soft);margin-bottom:18px;
+}
+.ty-hero-badge i{
+  width:22px;height:22px;border-radius:50%;
+  background:var(--ty-color-accent-soft);
+  display:grid;place-items:center;font-style:normal;font-size:12px;
+}
+h1.ty-hero-title{
+  font-size:clamp(34px,4.4vw,52px);
+  line-height:1.16;font-weight:800;letter-spacing:1px;
+  color:var(--ty-color-brand-deep);
+}
+h1.ty-hero-title span{
+  background:linear-gradient(120deg,#6a4fb6,#c47ba8 60%,#e08a6d);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.ty-hero-sub{
+  margin-top:16px;font-size:15.5px;color:var(--ty-color-ink-soft);
+  max-width:540px;
+}
+.ty-hero-intro{
+  margin-top:16px;font-size:14.5px;color:var(--ty-color-muted);
+  max-width:560px;
+}
+.ty-hero-actions{display:flex;gap:12px;margin-top:26px;flex-wrap:wrap;}
+.ty-btn{
+  display:inline-flex;align-items:center;gap:8px;
+  border-radius:999px;padding:12px 26px;
+  font-size:14.5px;font-weight:600;transition:.24s;
+}
+.ty-btn-primary{
+  background:linear-gradient(120deg,#6a4fb6,#8b6ee0);
+  color:#fff;box-shadow:0 10px 24px rgba(106,79,182,.32);
+}
+.ty-btn-primary:hover{transform:translateY(-2px);box-shadow:0 16px 32px rgba(106,79,182,.4);}
+.ty-btn-ghost{
+  background:#fff;color:var(--ty-color-brand-deep);
+  border:1px solid var(--ty-color-line);box-shadow:var(--ty-shadow-soft);
+}
+.ty-btn-ghost:hover{border-color:var(--ty-color-brand);color:var(--ty-color-brand);}
+.ty-hero-stats{
+  display:flex;gap:38px;margin-top:36px;flex-wrap:wrap;
+}
+.ty-hero-stats b{
+  display:block;font-size:26px;color:var(--ty-color-brand-deep);
+  font-weight:800;letter-spacing:.5px;
+}
+.ty-hero-stats b em{font-style:normal;font-size:14px;color:var(--ty-color-muted);font-weight:500;margin-left:2px;}
+.ty-hero-stats span{font-size:12.5px;color:var(--ty-color-muted);letter-spacing:.5px;}
+
+.ty-hero-art{
+  position:relative;border-radius:26px;overflow:hidden;
+  box-shadow:0 26px 60px rgba(59,47,94,.22);
+  background:#fff;
+  border:1px solid rgba(255,255,255,.6);
+}
+.ty-hero-art svg{width:100%;height:auto;}
+.ty-hero-art-tag{
+  position:absolute;left:18px;top:18px;
+  background:rgba(32,26,51,.62);backdrop-filter:blur(6px);
+  color:#fff;font-size:12px;letter-spacing:1px;
+  padding:5px 13px;border-radius:999px;
+}
+.ty-hero-art-caption{
+  position:absolute;left:18px;right:18px;bottom:18px;
+  background:rgba(255,255,255,.93);backdrop-filter:blur(8px);
+  border-radius:16px;padding:13px 17px;
+  display:flex;align-items:center;gap:12px;
+  box-shadow:0 8px 24px rgba(59,47,94,.14);
+}
+.ty-hero-art-caption i{
+  flex:0 0 auto;width:36px;height:36px;border-radius:50%;
+  background:linear-gradient(135deg,#f7a8c0,#ffd9a0);
+  display:grid;place-items:center;font-style:normal;font-size:15px;
+}
+.ty-hero-art-caption p{font-size:13px;line-height:1.5;color:var(--ty-color-ink-soft);}
+.ty-hero-art-caption p b{color:var(--ty-color-brand-deep);}
+
+/* ---------- 通用区块标题 ---------- */
+.ty-sec{padding:58px 0;}
+.ty-sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;margin-bottom:28px;flex-wrap:wrap;}
+.ty-sec-kicker{
+  display:inline-block;font-size:12px;letter-spacing:3px;
+  color:var(--ty-color-brand);font-weight:700;margin-bottom:8px;
+}
+.ty-sec-kicker::before{content:"";display:inline-block;width:16px;height:2px;background:var(--ty-color-brand);vertical-align:middle;margin-right:8px;border-radius:2px;}
+h2.ty-sec-title{
+  font-size:clamp(23px,2.6vw,31px);font-weight:800;letter-spacing:.6px;
+  color:var(--ty-color-brand-deep);line-height:1.3;
+}
+.ty-sec-desc{font-size:14px;color:var(--ty-color-muted);max-width:520px;margin-top:8px;}
+.ty-sec-link{
+  font-size:13.5px;color:var(--ty-color-brand);font-weight:600;
+  display:inline-flex;align-items:center;gap:6px;white-space:nowrap;
+  border-bottom:1px dashed rgba(106,79,182,.4);padding-bottom:2px;
+}
+.ty-sec-link:hover{color:var(--ty-color-brand-deep);}
+
+/* ---------- 品牌解析（长文） ---------- */
+.ty-about{background:linear-gradient(180deg,#fff,#f6f1fd);border-radius:30px;padding:46px 0;margin:10px 0 0;}
+.ty-about-grid{display:grid;grid-template-columns:.92fr 1.08fr;gap:48px;align-items:start;}
+.ty-about-visual{border-radius:24px;overflow:hidden;box-shadow:var(--ty-shadow-soft);background:#fff;border:1px solid var(--ty-color-line);}
+.ty-about-body h2{margin-bottom:16px;}
+.ty-about-body p{font-size:14.5px;color:var(--ty-color-ink-soft);margin-bottom:14px;text-align:justify;}
+.ty-about-body p b{color:var(--ty-color-brand-deep);}
+.ty-about-highlight{
+  margin-top:20px;display:grid;grid-template-columns:repeat(3,1fr);gap:12px;
+}
+.ty-about-highlight div{
+  background:#fff;border:1px solid var(--ty-color-line);border-radius:var(--ty-radius-md);
+  padding:14px 15px;
+}
+.ty-about-highlight b{display:block;font-size:15px;color:var(--ty-color-brand-deep);}
+.ty-about-highlight span{font-size:12.5px;color:var(--ty-color-muted);}
+
+/* ---------- 焦点内容 ---------- */
+.ty-focus-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:22px;}
+.ty-video-card{
+  background:#fff;border-radius:var(--ty-radius-lg);overflow:hidden;
+  border:1px solid var(--ty-color-line);box-shadow:var(--ty-shadow-soft);
+  transition:transform .28s,box-shadow .28s;
+  display:flex;flex-direction:column;
+}
+.ty-video-card:hover{transform:translateY(-5px);box-shadow:var(--ty-shadow-hover);}
+.ty-video-cover{position:relative;aspect-ratio:16/9;overflow:hidden;background:#eee9f8;}
+.ty-video-cover svg{width:100%;height:100%;}
+.ty-video-cover .ty-play{
+  position:absolute;inset:0;display:grid;place-items:center;
+  background:linear-gradient(180deg,transparent 40%,rgba(32,26,51,.42));
+  opacity:.92;
+}
+.ty-video-cover .ty-play i{
+  width:52px;height:52px;border-radius:50%;
+  background:rgba(255,255,255,.9);
+  display:grid;place-items:center;
+  box-shadow:0 8px 22px rgba(32,26,51,.3);
+  transition:.25s;
+}
+.ty-video-cover .ty-play i::after{
+  content:"";width:0;height:0;margin-left:4px;
+  border-left:14px solid var(--ty-color-brand-deep);
+  border-top:9px solid transparent;border-bottom:9px solid transparent;
+}
+.ty-video-card:hover .ty-play i{transform:scale(1.1);background:#fff;}
+.ty-video-tag{
+  position:absolute;left:14px;top:14px;
+  background:rgba(255,255,255,.92);color:var(--ty-color-brand-deep);
+  font-size:11.5px;font-weight:700;letter-spacing:1px;
+  padding:3px 11px;border-radius:999px;
+}
+.ty-video-tag.ty-tag-hot{background:var(--ty-color-accent);color:#5a2b3c;}
+.ty-video-body{padding:18px 20px 20px;display:flex;flex-direction:column;flex:1;}
+.ty-video-body h3{font-size:17.5px;font-weight:700;line-height:1.45;color:var(--ty-color-ink);}
+.ty-video-body h3:hover{color:var(--ty-color-brand);}
+.ty-video-body p{font-size:13.5px;color:var(--ty-color-muted);margin-top:8px;flex:1;}
+.ty-video-meta{
+  display:flex;align-items:center;justify-content:space-between;gap:10px;
+  margin-top:14px;font-size:12.5px;color:var(--ty-color-muted);flex-wrap:wrap;
+}
+.ty-video-meta .ty-author{display:flex;align-items:center;gap:7px;}
+.ty-avatar{
+  width:26px;height:26px;border-radius:50%;
+  display:grid;place-items:center;
+  font-size:12px;font-weight:700;color:#fff;flex:0 0 auto;
+}
+.ty-actions{display:flex;gap:6px;}
+.ty-act{
+  display:inline-flex;align-items:center;gap:4px;
+  font-size:12.5px;color:var(--ty-color-muted);
+  padding:4px 9px;border-radius:999px;background:#f5f1fb;
+  transition:.2s;
+}
+.ty-act:hover{background:#ebe3f9;color:var(--ty-color-brand);}
+.ty-act.ty-liked{color:#e0567f;background:#ffe3ec;}
+.ty-act.ty-saved{color:var(--ty-color-brand);background:#ece5fa;}
+
+.ty-focus-side{display:grid;gap:14px;}
+.ty-mini-card{
+  display:grid;grid-template-columns:128px 1fr;gap:14px;
+  background:#fff;border:1px solid var(--ty-color-line);
+  border-radius:var(--ty-radius-md);padding:10px;
+  box-shadow:0 4px 14px rgba(59,47,94,.05);
+  transition:.26s;align-items:center;
+}
+.ty-mini-card:hover{box-shadow:var(--ty-shadow-hover);transform:translateX(4px);border-color:#d9cff1;}
+.ty-mini-cover{position:relative;border-radius:10px;overflow:hidden;aspect-ratio:16/9;}
+.ty-mini-cover svg{width:100%;height:100%;}
+.ty-mini-body h4{font-size:14px;line-height:1.45;color:var(--ty-color-ink);}
+.ty-mini-body p{font-size:12px;color:var(--ty-color-muted);margin-top:5px;}
+
+/* ---------- 热门视频流 ---------- */
+.ty-stream{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+.ty-stream .ty-video-body h3{font-size:16px;}
+.ty-filter-bar{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:22px;}
+.ty-chip{
+  font-size:13px;padding:6px 15px;border-radius:999px;
+  background:#fff;border:1px solid var(--ty-color-line);
+  color:var(--ty-color-ink-soft);transition:.22s;
+}
+.ty-chip:hover{border-color:var(--ty-color-brand);color:var(--ty-color-brand);}
+.ty-chip.ty-chip-active{background:var(--ty-color-brand);border-color:var(--ty-color-brand);color:#fff;}
+.ty-stream-more{text-align:center;margin-top:30px;}
+
+/* ---------- 专题 ---------- */
+.ty-special{background:linear-gradient(160deg,#f4eefc,#eef8f4);border-radius:30px;padding:52px 0;}
+.ty-special-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+.ty-special-card{
+  position:relative;border-radius:var(--ty-radius-lg);overflow:hidden;
+  background:#fff;border:1px solid var(--ty-color-line);
+  box-shadow:var(--ty-shadow-soft);transition:.28s;
+  display:flex;flex-direction:column;
+}
+.ty-special-card:hover{transform:translateY(-5px);box-shadow:var(--ty-shadow-hover);}
+.ty-special-cover{aspect-ratio:16/10;overflow:hidden;position:relative;}
+.ty-special-cover svg{width:100%;height:100%;}
+.ty-special-status{
+  position:absolute;right:12px;top:12px;
+  background:rgba(32,26,51,.6);color:#fff;
+  font-size:11px;padding:3px 10px;border-radius:999px;letter-spacing:.5px;
+}
+.ty-special-status.ty-status-live{background:var(--ty-color-accent);color:#5a2b3c;font-weight:700;}
+.ty-special-body{padding:18px 20px 20px;flex:1;display:flex;flex-direction:column;}
+.ty-special-body h3{font-size:16.5px;line-height:1.45;color:var(--ty-color-brand-deep);}
+.ty-special-body p{font-size:13px;color:var(--ty-color-muted);margin-top:8px;flex:1;}
+.ty-special-foot{
+  display:flex;justify-content:space-between;align-items:center;
+  margin-top:14px;font-size:12px;color:var(--ty-color-muted);
+  border-top:1px dashed var(--ty-color-line);padding-top:12px;
+}
+.ty-special-foot b{color:var(--ty-color-brand);font-weight:600;}
+
+/* ---------- 创作者矩阵 ---------- */
+.ty-creators{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;}
+.ty-creator-card{
+  background:#fff;border:1px solid var(--ty-color-line);
+  border-radius:var(--ty-radius-lg);padding:24px 20px;
+  text-align:center;box-shadow:var(--ty-shadow-soft);
+  transition:.28s;position:relative;overflow:hidden;
+}
+.ty-creator-card::before{
+  content:"";position:absolute;left:0;right:0;top:0;height:76px;
+  background:linear-gradient(120deg,#f1e9ff,#e6f6f0);
+}
+.ty-creator-card:hover{transform:translateY(-6px);box-shadow:var(--ty-shadow-hover);}
+.ty-creator-avatar{
+  position:relative;width:68px;height:68px;border-radius:50%;
+  margin:0 auto 14px;display:grid;place-items:center;
+  font-size:24px;font-weight:800;color:#fff;
+  border:4px solid #fff;box-shadow:0 6px 16px rgba(59,47,94,.16);
+}
+.ty-creator-card h3{font-size:16px;color:var(--ty-color-ink);position:relative;}
+.ty-creator-field{
+  display:inline-block;margin-top:6px;font-size:11.5px;
+  background:#f2edfc;color:var(--ty-color-brand);
+  border-radius:999px;padding:2px 11px;position:relative;
+}
+.ty-creator-card p{font-size:12.5px;color:var(--ty-color-muted);margin-top:11px;min-height:56px;position:relative;}
+.ty-creator-nums{
+  display:flex;justify-content:center;gap:22px;margin-top:12px;
+  border-top:1px dashed var(--ty-color-line);padding-top:13px;position:relative;
+}
+.ty-creator-nums b{display:block;font-size:15px;color:var(--ty-color-brand-deep);}
+.ty-creator-nums span{font-size:11px;color:var(--ty-color-muted);}
+.ty-creator-btn{
+  margin-top:14px;width:100%;font-size:13px;padding:8px 0;
+  border-radius:999px;background:#f5f1fb;color:var(--ty-color-brand);
+  font-weight:600;transition:.22s;position:relative;
+}
+.ty-creator-btn:hover{background:var(--ty-color-brand);color:#fff;}
+
+/* ---------- 故事随笔 + 作品墙 ---------- */
+.ty-stories{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;}
+.ty-story-card{
+  background:#fff;border:1px solid var(--ty-color-line);
+  border-radius:var(--ty-radius-lg);padding:24px 24px 22px;
+  box-shadow:var(--ty-shadow-soft);position:relative;
+  transition:.26s;
+}
+.ty-story-card:hover{box-shadow:var(--ty-shadow-hover);}
+.ty-story-card::after{
+  content:"“";position:absolute;right:22px;top:6px;
+  font-size:64px;line-height:1;color:#efe7fb;font-family:Georgia,serif;
+}
+.ty-story-card .ty-story-meta{
+  display:flex;align-items:center;gap:10px;font-size:12px;color:var(--ty-color-muted);
+  margin-bottom:10px;
+}
+.ty-story-card h3{font-size:16.5px;color:var(--ty-color-brand-deep);line-height:1.45;}
+.ty-story-card p{font-size:13.5px;color:var(--ty-color-ink-soft);margin-top:10px;text-align:justify;}
+
+.ty-wall{display:grid;grid-template-columns:repeat(6,1fr);gap:14px;margin-top:30px;}
+.ty-wall-item{
+  position:relative;border-radius:var(--ty-radius-md);overflow:hidden;
+  border:1px solid var(--ty-color-line);background:#fff;
+  transition:.26s;box-shadow:0 4px 14px rgba(59,47,94,.05);
+}
+.ty-wall-item:hover{transform:translateY(-4px);box-shadow:var(--ty-shadow-hover);}
+.ty-wall-item svg{width:100%;height:100%;}
+.ty-wall-item.ty-wall-big{grid-column:span 3;grid-row:span 2;}
+.ty-wall-item.ty-wall-mid{grid-column:span 2;}
+.ty-wall-item.ty-wall-sm{grid-column:span 2;}
+.ty-wall-item figcaption{
+  position:absolute;left:0;right:0;bottom:0;
+  background:linear-gradient(transparent,rgba(32,26,51,.72));
+  color:#fff;font-size:12px;padding:22px 12px 9px;
+  line-height:1.4;
+}
+
+/* ---------- 评论 ---------- */
+.ty-comments{background:linear-gradient(180deg,#f6f1fd,#fff);border-radius:30px;padding:48px 0;}
+.ty-comment-list{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;}
+.ty-comment{
+  background:#fff;border:1px solid var(--ty-color-line);
+  border-radius:var(--ty-radius-md);padding:18px 19px;
+  box-shadow:0 4px 14px rgba(59,47,94,.05);
+}
+.ty-comment-head{display:flex;align-items:center;gap:10px;margin-bottom:9px;}
+.ty-comment-head b{font-size:13.5px;color:var(--ty-color-ink);}
+.ty-comment-head span{font-size:11.5px;color:var(--ty-color-muted);margin-left:auto;}
+.ty-comment p{font-size:13px;color:var(--ty-color-ink-soft);line-height:1.7;}
+.ty-comment p em{font-style:normal;color:var(--ty-color-brand);}
+.ty-comment-stars{font-size:12px;color:#f0a83c;letter-spacing:2px;margin-top:8px;}
+
+/* ---------- 创作灵感 + 榜单 ---------- */
+.ty-inspire-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:24px;}
+.ty-inspire-card{
+  background:linear-gradient(140deg,#3b2f5e,#5a4890 60%,#7d63c4);
+  border-radius:var(--ty-radius-lg);padding:30px 30px 28px;color:#fff;
+  position:relative;overflow:hidden;
+}
+.ty-inspire-card::after{
+  content:"";position:absolute;right:-60px;top:-60px;
+  width:200px;height:200px;border-radius:50%;
+  background:radial-gradient(circle,rgba(247,168,192,.4),transparent 70%);
+}
+.ty-inspire-card h3{font-size:19px;letter-spacing:.5px;position:relative;}
+.ty-inspire-card > p{font-size:13.5px;opacity:.86;margin-top:9px;position:relative;}
+.ty-inspire-list{display:grid;gap:11px;margin-top:20px;position:relative;}
+.ty-inspire-list li{
+  display:flex;gap:12px;align-items:flex-start;
+  background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.16);
+  border-radius:12px;padding:12px 15px;font-size:13px;line-height:1.6;
+}
+.ty-inspire-list li span{
+  flex:0 0 auto;width:21px;height:21px;border-radius:6px;
+  background:var(--ty-color-glow);color:#5a3d1c;font-size:12px;font-weight:700;
+  display:grid;place-items:center;margin-top:2px;
+}
+.ty-rank-card{
+  background:#fff;border:1px solid var(--ty-color-line);
+  border-radius:var(--ty-radius-lg);padding:26px 26px 20px;
+  box-shadow:var(--ty-shadow-soft);
+}
+.ty-rank-card h3{font-size:17px;color:var(--ty-color-brand-deep);margin-bottom:16px;display:flex;align-items:center;gap:8px;}
+.ty-rank-card h3::before{content:"";width:4px;height:16px;border-radius:2px;background:var(--ty-color-brand);}
+.ty-rank-row{
+  display:flex;align-items:center;gap:12px;
+  padding:10px 0;border-bottom:1px dashed var(--ty-color-line);font-size:13.5px;
+}
+.ty-rank-row:last-child{border-bottom:none;}
+.ty-rank-num{
+  flex:0 0 auto;width:24px;height:24px;border-radius:8px;
+  display:grid;place-items:center;font-size:12px;font-weight:700;
+  background:#f2edfc;color:var(--ty-color-brand);
+}
+.ty-rank-row:nth-child(2) .ty-rank-num{background:#ffe3ec;color:#c04a6e;}
+.ty-rank-row:nth-child(3) .ty-rank-num{background:#fff1d6;color:#a8762a;}
+.ty-rank-row b{font-weight:600;color:var(--ty-color-ink);}
+.ty-rank-row span{margin-left:auto;font-size:12px;color:var(--ty-color-muted);}
+
+/* ---------- 动态 / 合作 ---------- */
+.ty-news-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:26px;}
+.ty-news-list{display:grid;gap:12px;}
+.ty-news-item{
+  background:#fff;border:1px solid var(--ty-color-line);
+  border-radius:var(--ty-radius-md);padding:16px 20px;
+  display:flex;gap:16px;align-items:flex-start;
+  transition:.24s;
+}
+.ty-news-item:hover{border-color:#d9cff1;box-shadow:0 8px 22px rgba(59,47,94,.08);}
+.ty-news-date{
+  flex:0 0 auto;text-align:center;background:#f5f1fb;border-radius:10px;
+  padding:6px 10px;min-width:62px;
+}
+.ty-news-date b{display:block;font-size:16px;color:var(--ty-color-brand-deep);}
+.ty-news-date span{font-size:11px;color:var(--ty-color-muted);}
+.ty-news-item h4{font-size:14.5px;color:var(--ty-color-ink);line-height:1.5;}
+.ty-news-item p{font-size:12.5px;color:var(--ty-color-muted);margin-top:4px;}
+.ty-news-tag{
+  display:inline-block;font-size:11px;color:var(--ty-color-brand);
+  background:#f2edfc;border-radius:999px;padding:1px 9px;margin-right:6px;
+}
+.ty-partners{display:flex;flex-wrap:wrap;gap:10px;margin-top:8px;}
+.ty-partner{
+  flex:1 1 44%;background:#fff;border:1px solid var(--ty-color-line);
+  border-radius:12px;padding:14px 16px;font-size:13px;color:var(--ty-color-ink-soft);
+  display:flex;align-items:center;gap:10px;transition:.22s;
+}
+.ty-partner:hover{border-color:var(--ty-color-brand);color:var(--ty-color-brand);}
+.ty-partner i{
+  width:26px;height:26px;border-radius:8px;flex:0 0 auto;
+  display:grid;place-items:center;font-style:normal;font-size:12px;font-weight:700;color:#fff;
+}
+
+/* ---------- FAQ ---------- */
+.ty-faq-wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:36px;align-items:start;}
+.ty-faq-side{background:#fff;border:1px solid var(--ty-color-line);border-radius:var(--ty-radius-lg);padding:26px;box-shadow:var(--ty-shadow-soft);}
+.ty-faq-side h3{font-size:17px;color:var(--ty-color-brand-deep);margin-bottom:10px;}
+.ty-faq-side p{font-size:13.5px;color:var(--ty-color-muted);margin-bottom:16px;}
+.ty-faq-side .ty-btn{font-size:13.5px;padding:9px 20px;}
+.ty-faq-list{display:grid;gap:10px;}
+.ty-faq-list details{
+  background:#fff;border:1px solid var(--ty-color-line);border-radius:var(--ty-radius-md);
+  padding:0 20px;transition:.24s;
+}
+.ty-faq-list details[open]{border-color:#d3c6ef;box-shadow:0 8px 22px rgba(59,47,94,.08);}
+.ty-faq-list summary{
+  cursor:pointer;font-size:14.5px;font-weight:600;color:var(--ty-color-ink);
+  padding:15px 0;list-style:none;display:flex;align-items:center;gap:10px;
+}
+.ty-faq-list summary::-webkit-details-marker{display:none;}
+.ty-faq-list summary::after{
+  content:"+";margin-left:auto;font-size:18px;color:var(--ty-color-brand);
+  transition:.22s;font-weight:400;
+}
+.ty-faq-list details[open] summary::after{content:"−";}
+.ty-faq-list details p{font-size:13.5px;color:var(--ty-color-muted);padding:0 0 16px;line-height:1.75;}
+
+/* ---------- 联系 / 页脚 ---------- */
+.ty-contact{
+  background:linear-gradient(120deg,#3b2f5e,#6a4fb6 55%,#a07fd8);
+  border-radius:30px;padding:48px 44px;color:#fff;
+  display:grid;grid-template-columns:1.1fr .9fr;gap:36px;align-items:center;
+  position:relative;overflow:hidden;margin:0 0 58px;
+}
+.ty-contact::before{
+  content:"";position:absolute;right:-80px;bottom:-120px;
+  width:340px;height:340px;border-radius:50%;
+  background:radial-gradient(circle,rgba(255,217,160,.3),transparent 68%);
+}
+.ty-contact h2{font-size:clamp(24px,2.8vw,32px);letter-spacing:.6px;position:relative;}
+.ty-contact p{font-size:14px;opacity:.85;margin-top:12px;position:relative;max-width:460px;}
+.ty-contact-actions{display:flex;gap:12px;margin-top:26px;flex-wrap:wrap;position:relative;}
+.ty-contact .ty-btn-primary{background:#fff;color:var(--ty-color-brand-deep);box-shadow:0 10px 26px rgba(0,0,0,.16);}
+.ty-contact .ty-btn-primary:hover{background:var(--ty-color-glow);}
+.ty-contact .ty-btn-ghost{background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.4);color:#fff;box-shadow:none;}
+.ty-contact .ty-btn-ghost:hover{background:rgba(255,255,255,.22);border-color:#fff;color:#fff;}
+.ty-contact-info{position:relative;display:grid;gap:12px;}
+.ty-contact-info div{
+  background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);
+  border-radius:12px;padding:12px 16px;font-size:13.5px;display:flex;gap:10px;align-items:center;
+}
+.ty-contact-info div b{font-weight:600;}
+
+.ty-footer{background:#241d38;color:#c9c3da;padding:52px 0 0;font-size:13.5px;}
+.ty-footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:34px;padding-bottom:36px;}
+.ty-footer h4{color:#fff;font-size:14.5px;margin-bottom:14px;letter-spacing:.5px;}
+.ty-footer p{font-size:13px;line-height:1.85;color:#a9a2bd;}
+.ty-footer ul{display:grid;gap:8px;}
+.ty-footer ul a{color:#a9a2bd;font-size:13px;transition:.2s;}
+.ty-footer ul a:hover{color:var(--ty-color-glow);}
+.ty-footer-brand{display:flex;align-items:center;gap:11px;margin-bottom:14px;}
+.ty-footer-brand strong{color:#fff;font-size:16px;letter-spacing:1px;}
+.ty-footer-bottom{
+  border-top:1px solid rgba(255,255,255,.1);padding:18px 0 22px;
+  display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
+  font-size:12.5px;color:#8f88a6;
+}
+
+/* ---------- 浮动按钮 & 弹窗 & Toast ---------- */
+.ty-backtop{
+  position:fixed;right:24px;bottom:26px;z-index:70;
+  width:46px;height:46px;border-radius:50%;
+  background:var(--ty-color-brand);color:#fff;font-size:18px;
+  display:grid;place-items:center;box-shadow:0 10px 26px rgba(106,79,182,.4);
+  opacity:0;pointer-events:none;transform:translateY(12px);transition:.28s;
+}
+.ty-backtop.ty-show{opacity:1;pointer-events:auto;transform:translateY(0);}
+.ty-backtop:hover{background:var(--ty-color-brand-deep);}
+
+.ty-modal-mask{
+  position:fixed;inset:0;z-index:120;
+  background:rgba(32,26,51,.52);backdrop-filter:blur(4px);
+  display:none;place-items:center;padding:20px;
+}
+.ty-modal-mask.ty-open{display:grid;}
+.ty-modal{
+  background:#fff;border-radius:20px;width:min(520px,94vw);
+  padding:30px 30px 26px;box-shadow:0 30px 80px rgba(32,26,51,.35);
+  animation:tyPop .26s ease;
+  max-height:86vh;overflow:auto;
+}
+@keyframes tyPop{from{transform:translateY(16px) scale(.97);opacity:0;}to{transform:none;opacity:1;}}
+.ty-modal h3{font-size:19px;color:var(--ty-color-brand-deep);margin-bottom:8px;}
+.ty-modal > p{font-size:13.5px;color:var(--ty-color-muted);margin-bottom:18px;}
+.ty-modal label{display:block;font-size:13px;color:var(--ty-color-ink-soft);margin:13px 0 5px;font-weight:600;}
+.ty-modal input,.ty-modal textarea,.ty-modal select{
+  width:100%;border:1px solid var(--ty-color-line);border-radius:10px;
+  padding:10px 13px;font-size:13.5px;font-family:inherit;outline:none;
+  background:#faf7fd;color:var(--ty-color-ink);transition:.2s;
+}
+.ty-modal input:focus,.ty-modal textarea:focus,.ty-modal select:focus{border-color:var(--ty-color-brand);background:#fff;box-shadow:0 0 0 3px rgba(106,79,182,.1);}
+.ty-modal textarea{resize:vertical;min-height:88px;}
+.ty-modal-actions{display:flex;gap:10px;margin-top:22px;}
+.ty-modal-actions .ty-btn{flex:1;justify-content:center;padding:11px 0;font-size:14px;}
+
+.ty-toast{
+  position:fixed;left:50%;bottom:42px;transform:translate(-50%,16px);
+  background:rgba(32,26,51,.92);color:#fff;font-size:13.5px;
+  padding:11px 24px;border-radius:999px;z-index:200;
+  opacity:0;pointer-events:none;transition:.28s;letter-spacing:.4px;
+  box-shadow:0 12px 30px rgba(0,0,0,.26);
+}
+.ty-toast.ty-show{opacity:1;transform:translate(-50%,0);}
+
+.ty-share-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px;}
+.ty-share-row button{
+  font-size:13px;padding:8px 16px;border-radius:999px;
+  background:#f5f1fb;color:var(--ty-color-brand);transition:.2s;
+}
+.ty-share-row button:hover{background:var(--ty-color-brand);color:#fff;}
+
+/* ---------- 响应式 ---------- */
+@media(max-width:1080px){
+  .ty-creators{grid-template-columns:repeat(2,1fr);}
+  .ty-stream{grid-template-columns:repeat(2,1fr);}
+  .ty-special-grid{grid-template-columns:repeat(2,1fr);}
+  .ty-wall{grid-template-columns:repeat(4,1fr);}
+  .ty-wall-item.ty-wall-big{grid-column:span 4;grid-row:span 1;}
+  .ty-wall-item.ty-wall-mid,.ty-wall-item.ty-wall-sm{grid-column:span 2;}
+  .ty-comment-list{grid-template-columns:repeat(2,1fr);}
+  .ty-footer-grid{grid-template-columns:1fr 1fr;}
+}
+@media(max-width:900px){
+  :root{--ty-sticky-height:104px;}
+  .ty-hero-grid{grid-template-columns:1fr;gap:32px;}
+  .ty-about-grid{grid-template-columns:1fr;gap:28px;}
+  .ty-focus-grid{grid-template-columns:1fr;}
+  .ty-inspire-grid{grid-template-columns:1fr;}
+  .ty-news-grid{grid-template-columns:1fr;}
+  .ty-faq-wrap{grid-template-columns:1fr;}
+  .ty-contact{grid-template-columns:1fr;padding:36px 26px;}
+  .ty-header-inner{flex-wrap:wrap;gap:12px;padding:11px 0;}
+  .ty-menu-toggle{display:block;margin-left:auto;order:2;}
+  .ty-header-tools{order:3;}
+  .ty-nav{
+    order:4;flex-basis:100%;display:none;flex-direction:column;gap:2px;
+    margin-left:0;padding:8px 0 12px;border-top:1px dashed var(--ty-color-line);
+    margin-top:4px;
+  }
+  .ty-nav.ty-nav-open{display:flex;}
+  .ty-nav a{padding:10px 14px;border-radius:10px;}
+  .ty-search input{width:104px;}
+}
+@media(max-width:640px){
+  body{font-size:15px;}
+  .ty-sec{padding:42px 0;}
+  .ty-stream{grid-template-columns:1fr;}
+  .ty-creators{grid-template-columns:1fr;}
+  .ty-special-grid{grid-template-columns:1fr;}
+  .ty-stories{grid-template-columns:1fr;}
+  .ty-comment-list{grid-template-columns:1fr;}
+  .ty-hero-stats{gap:26px;}
+  .ty-hero-stats b{font-size:22px;}
+  .ty-about-highlight{grid-template-columns:1fr;}
+  .ty-footer-grid{grid-template-columns:1fr;}
+  .ty-wall{grid-template-columns:repeat(2,1fr);}
+  .ty-wall-item.ty-wall-big{grid-column:span 2;}
+  .ty-wall-item.ty-wall-mid,.ty-wall-item.ty-wall-sm{grid-column:span 1;}
+  .ty-notice-inner{font-size:12px;}
+  .ty-notice-more{display:none;}
+  .ty-header-tools{width:100%;order:3;}
+  .ty-search{flex:1;}
+  .ty-search input{width:100%;flex:1;}
+  .ty-notice-track{gap:22px;}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<!-- 公告条 -->
+<div class="ty-notice-bar">
+  <div class="ty-notice-inner">
+    <span class="ty-notice-label">官方发布</span>
+    <div class="ty-notice-track" id="tyNoticeTrack">
+      <span class="ty-notice-item"><b>11月18日</b> 新专题《童颜长辈漫画·街角慢镜头》上线，收录 12 部原创短片</span>
+      <span class="ty-notice-item"><b>11月15日</b> 创作者冬季企划报名开启，共 46 个创作席位</span>
+      <span class="ty-notice-item"><b>11月12日</b> 高清正版片库扩容，新增 38 部童颜长辈漫画精品内容</span>
+      <span class="ty-notice-item"><b>11月08日</b> 社区投票结果公布：《傍晚的风》获本周口碑榜第一位</span>
+    </div>
+    <a class="ty-notice-more" href="#tyNews">更多动态</a>
+  </div>
+</div>
+
+<!-- 页头 -->
+<header class="ty-header">
+  <div class="ty-header-inner">
+    <a class="ty-brand" href="#tyHome" aria-label="童颜长辈漫画官方网站首页">
+      <span class="ty-brand-mark">
+        <svg viewBox="0 0 64 64" aria-hidden="true">
+          <circle cx="24" cy="28" r="9" fill="#ffd9a0"/>
+          <circle cx="44" cy="34" r="7" fill="#f7a8c0"/>
+          <path d="M14 50c6-8 24-8 34-2" stroke="#ffffff" stroke-width="3" fill="none" stroke-linecap="round"/>
+        </svg>
+      </span>
+      <span class="ty-brand-text">
+        <strong>童颜长辈漫画</strong>
+        <span>OFFICIAL SITE</span>
+      </span>
+    </a>
+    <button class="ty-menu-toggle" id="tyMenuToggle" aria-label="展开导航菜单" aria-expanded="false">☰</button>
+    <nav class="ty-nav" id="tyNav" aria-label="主导航">
+      <a href="#tyHome">首页</a>
+      <a href="#tyFocus">焦点内容</a>
+      <a href="#tySpecial">专题企划</a>
+      <a href="#tyCreators">创作者</a>
+      <a href="#tyStories">故事随笔</a>
+      <a href="#tyNews">企业动态</a>
+      <a href="#tyFaq">帮助</a>
+      <a href="#tyContact">联系</a>
+    </nav>
+    <div class="ty-header-tools">
+      <form class="ty-search" id="tySearchForm" role="search" onsubmit="return false;">
+        <input type="search" id="tySearchInput" placeholder="搜索漫画作品或创作者" aria-label="搜索漫画作品或创作者">
+        <button type="submit" id="tySearchBtn">搜索</button>
+      </form>
+    </div>
+  </div>
+  <div class="ty-search-tip" id="tySearchTip" role="status" aria-live="polite"></div>
+</header>
+
+<main>
+  <!-- 首屏 -->
+  <section class="ty-hero" id="tyHome">
+    <div class="ty-page-wrap">
+      <div class="ty-hero-grid">
+        <div class="ty-hero-copy">
+          <span class="ty-hero-badge"><i>官</i> 童颜长辈漫画官方网站 · 品牌内容门户</span>
+          <h1 class="ty-hero-title">童颜长辈漫画<br><span>让每一段日常都被温柔记住</span></h1>
+          <p class="ty-hero-sub">以原创漫画与短影像为语言，记录童颜长辈的可爱、倔强与温柔，构建一个专注代际故事的视频内容社区。</p>
+          <p class="ty-hero-intro">作为深耕代际情感题材的漫画品牌，童颜长辈漫画官方网站持续运营原创内容库、创作者社区与企业动态栏目，为每一位内容创作者提供正版高清的发布空间，也为每一位观众提供值得信赖的精品内容。</p>
+          <div class="ty-hero-actions">
+            <a class="ty-btn ty-btn-primary" href="#tyFocus">进入焦点内容 <span aria-hidden="true">→</span></a>
+            <a class="ty-btn ty-btn-ghost" href="#tyCreators">认识创作者</a>
+          </div>
+          <div class="ty-hero-stats">
+            <div><b>1238<em>部</em></b><span>原创漫画与短片</span></div>
+            <div><b>286<em>位</em></b><span>签约与驻站创作者</span></div>
+            <div><b>412<em>万</em></b><span>社区累计互动</span></div>
+          </div>
+        </div>
+        <div class="ty-hero-art">
+          <span class="ty-hero-art-tag">品牌主视觉 · 2026 冬</span>
+          <svg viewBox="0 0 640 460" role="img" aria-label="童颜长辈漫画品牌主视觉：暖色窗边的长辈与孙辈对坐画画">
+            <defs>
+              <linearGradient id="tyArtSky" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#f9e7d8"/>
+                <stop offset="1" stop-color="#e6d7f7"/>
+              </linearGradient>
+              <linearGradient id="tyArtTable" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#c89f7b"/>
+                <stop offset="1" stop-color="#9c7554"/>
+              </linearGradient>
+              <linearGradient id="tyArtWindow" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#bfe3f2"/>
+                <stop offset="1" stop-color="#eaf6fb"/>
+              </linearGradient>
+            </defs>
+            <rect width="640" height="460" fill="url(#tyArtSky)"/>
+            <circle cx="520" cy="86" r="52" fill="#ffd9a0" opacity=".8"/>
+            <rect x="64" y="52" width="230" height="184" rx="14" fill="url(#tyArtWindow)" stroke="#ffffff" stroke-width="8"/>
+            <path d="M179 52v184M64 144h230" stroke="#ffffff" stroke-width="7"/>
+            <path d="M96 218c18-34 44-14 60-38 16-24 46-6 40 20-6 26-40 36-64 30" fill="#8fd6c0" opacity=".72"/>
+            <rect x="0" y="322" width="640" height="138" fill="url(#tyArtTable)"/>
+            <ellipse cx="196" cy="322" rx="74" ry="18" fill="#f6e6d6"/>
+            <ellipse cx="452" cy="330" rx="64" ry="16" fill="#f6e6d6"/>
+            <!-- 长辈 -->
+            <g>
+              <path d="M140 322c0-48 26-78 58-78s56 30 56 78z" fill="#7f6bb3"/>
+              <circle cx="198" cy="214" r="42" fill="#f6d9bf"/>
+              <path d="M156 196c6-34 70-40 84-6 4 10-2 14-10 12-22-6-44-4-58 6-8 6-18 0-16-12z" fill="#efe9f5"/>
+              <path d="M168 208c4-22 30-30 50-26" stroke="#e4dcea" stroke-width="9" fill="none" stroke-linecap="round"/>
+              <circle cx="182" cy="216" r="4" fill="#4a3c63"/>
+              <circle cx="216" cy="216" r="4" fill="#4a3c63"/>
+              <path d="M188 234c6 6 16 6 22 0" stroke="#c98a7a" stroke-width="4" fill="none" stroke-linecap="round"/>
+              <circle cx="172" cy="228" r="7" fill="#f7a8c0" opacity=".65"/>
+              <circle cx="226" cy="228" r="7" fill="#f7a8c0" opacity=".65"/>
+            </g>
+            <!-- 孙辈 -->
+            <g>
+              <path d="M400 322c0-44 24-72 52-72s50 28 50 72z" fill="#f2b8c9"/>
+              <circle cx="452" cy="222" r="36" fill="#f9dfc9"/>
+              <path d="M416 214c0-26 30-42 52-30 12 6 18 16 18 30 0 8-6 6-12 2-14-8-34-8-46 0-6 4-12 6-12-2z" fill="#43325c"/>
+              <circle cx="440" cy="222" r="3.6" fill="#3b2f5e"/>
+              <circle cx="466" cy="222" r="3.6" fill="#3b2f5e"/>
+              <path d="M446 238c5 5 13 5 18 0" stroke="#c98a7a" stroke-width="3.4" fill="none" stroke-linecap="round"/>
+            </g>
+            <!-- 桌面画稿 -->
+            <g>
+              <rect x="244" y="286" width="120" height="42" rx="5" fill="#fffdf8" transform="rotate(-4 304 307)"/>
+              <path d="M262 302h58M262 312h40" stroke="#c9bfe4" stroke-width="4" stroke-linecap="round" transform="rotate(-4 304 307)"/>
+              <path d="M310 296l14-6 6 12z" fill="#f7a8c0" opacity=".8" transform="rotate(-4 304 307)"/>
+            </g>
+            <g opacity=".55">
+              <path d="M540 250c14-10 30 4 24 18-4 10-18 10-22 0" fill="none" stroke="#a98fd8" stroke-width="5" stroke-linecap="round"/>
+              <circle cx="566" cy="212" r="5" fill="#f7a8c0"/>
+              <circle cx="590" cy="240" r="4" fill="#8fd6c0"/>
+            </g>
+          </svg>
+          <div class="ty-hero-art-caption">
+            <i>✦</i>
+            <p><b>本期主视觉《窗边的两代人》</b><br>由品牌视觉组与 3 位驻站创作者共同完成</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 品牌解析 -->
+  <section class="ty-sec" id="tyAbout">
+    <div class="ty-page-wrap">
+      <div class="ty-about">
+        <div class="ty-page-wrap">
+          <div class="ty-about-grid">
+            <div class="ty-about-visual">
+              <svg viewBox="0 0 520 400" role="img" aria-label="童颜长辈漫画品牌解读插图：三格漫画分镜与手绘线条">
+                <rect width="520" height="400" fill="#fdf9f3"/>
+                <rect x="26" y="26" width="220" height="160" rx="12" fill="#efe6fb" stroke="#d9cbf2" stroke-width="2"/>
+                <circle cx="96" cy="96" r="34" fill="#f6d9bf"/>
+                <path d="M62 92c4-26 34-36 54-26 10 6 14 12 14 26 0 8-6 6-12 2-14-8-34-8-46 0-6 4-10 6-10-2z" fill="#e8e2f2"/>
+                <circle cx="88" cy="98" r="3.4" fill="#4a3c63"/>
+                <circle cx="106" cy="98" r="3.4" fill="#4a3c63"/>
+                <path d="M90 112c4 4 10 4 14 0" stroke="#c98a7a" stroke-width="3" fill="none" stroke-linecap="round"/>
+                <path d="M66 160c8-20 26-20 34-8 10-14 28-10 32 8z" fill="#9b7fe6"/>
+                <rect x="274" y="26" width="220" height="160" rx="12" fill="#e8f7f1" stroke="#c3e8da" stroke-width="2"/>
+                <path d="M300 150c26-52 66-52 90-16 12-30 46-28 56 4" stroke="#8fd6c0" stroke-width="6" fill="none" stroke-linecap="round"/>
+                <circle cx="330" cy="80" r="22" fill="#ffd9a0"/>
+                <rect x="392" y="66" width="62" height="44" rx="8" fill="#fff" stroke="#c3e8da" stroke-width="2"/>
+                <path d="M404 82h38M404 94h24" stroke="#a9c7bb" stroke-width="3" stroke-linecap="round"/>
+                <rect x="26" y="208" width="468" height="166" rx="12" fill="#fff4f7" stroke="#f2cede" stroke-width="2"/>
+                <rect x="52" y="234" width="130" height="114" rx="9" fill="#f7a8c0" opacity=".38"/>
+                <rect x="196" y="234" width="130" height="114" rx="9" fill="#a98fd8" opacity=".34"/>
+                <rect x="340" y="234" width="130" height="114" rx="9" fill="#8fd6c0" opacity=".38"/>
+                <path d="M74 320c16-20 34-6 42-20 10-16 26-10 30 6" stroke="#b98aa1" stroke-width="4" fill="none" stroke-linecap="round"/>
+                <circle cx="248" cy="286" r="20" fill="#fff" stroke="#a98fd8" stroke-width="3"/>
+                <path d="M240 286l6 7 12-14" stroke="#7f6bb3" stroke-width="4" fill="none" stroke-linecap="round"/>
+                <path d="M362 300h86M362 314h58M362 328h72" stroke="#9bcab8" stroke-width="4" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="ty-about-body">
+              <span class="ty-sec-kicker">品牌深度解析</span>
+              <h2 class="ty-sec-title">关于童颜长辈漫画，一个持续生长的内容生态</h2>
+              <p>童颜长辈漫画起步于一群漫画作者与影像记录者的共同兴趣：他们想用更轻盈的方式，讲述长辈们被时光打磨过、却依旧保有童真的那张脸。品牌创立之初，团队只有六个人和一间不足四十平方米的工作室；今天，童颜长辈漫画官方网站已经成为集原创漫画、短影像、创作者社区与专题企划于一体的垂直领域内容平台，签约与驻站创作者超过两百八十位。</p>
+              <p>我们把“<b>童颜长辈漫画</b>”理解为一种叙事方法：不把长辈写成刻板的配角，也不刻意煽情，而是回到具体的生活细节里——一双总也洗不干净的手、一句反复念叨的叮嘱、一次没赶上的班车。平台上的每一部作品都经过编辑与内容审核的双重把关，正版高清、来源清晰，让观众在社区里看到的每一帧画面，都值得信赖。</p>
+              <p>内容生态之外，童颜长辈漫画同样重视社区的温度。我们设置了投稿指南、创作灵感与投票挑战，鼓励普通用户用手机记录身边长辈的一个瞬间；也设置了比赛与报名通道，为新人创作者提供被看见的机会。品牌故事不是写在墙上的口号，而是一年年持续运营中，创作者与观众共同写下的注脚。</p>
+              <p>在企业责任层面，童颜长辈漫画长期关注代际沟通与老年群体的数字生活，与多家公益组织合作推出免费影像记录课程，帮助社区老人学会用镜头讲述自己的故事。我们相信，一个品牌真正的行业影响力，来自它对真实生活保持的耐心与敬意，也来自它对多元表达的包容。</p>
+              <div class="ty-about-highlight">
+                <div><b>原创优先</b><span>坚持正版授权与原创署名</span></div>
+                <div><b>社区共建</b><span>创作者与观众共同成长</span></div>
+                <div><b>长期主义</b><span>七年持续运营，口碑积累</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 焦点内容 -->
+  <section class="ty-sec" id="tyFocus">
+    <div class="ty-page-wrap">
+      <div class="ty-sec-head">
+        <div>
+          <span class="ty-sec-kicker">FOCUS</span>
+          <h2 class="ty-sec-title">焦点内容 · 本周编辑推荐</h2>
+          <p class="ty-sec-desc">由品牌编辑部从上千部童颜长辈漫画作品中甄选，兼顾叙事的真实质感与影像的完成度。</p>
+        </div>
+        <a class="ty-sec-link" href="#tyStream">查看全部内容</a>
+      </div>
+      <div class="ty-focus-grid">
+        <article class="ty-video-card">
+          <div class="ty-video-cover">
+            <span class="ty-video-tag ty-tag-hot">本周焦点</span>
+            <svg viewBox="0 0 640 360" role="img" aria-label="焦点漫画短片《外婆的第七本手账》封面：桌面上摊开的手账与茶杯">
+              <defs>
+                <linearGradient id="tyFocusBg1" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#fff3e6"/>
+                  <stop offset="1" stop-color="#f3e6fb"/>
+                </linearGradient>
+              </defs>
+              <rect width="640" height="360" fill="url(#tyFocusBg1)"/>
+              <circle cx="520" cy="78" r="46" fill="#ffd9a0" opacity=".62"/>
+              <rect x="0" y="264" width="640" height="96" fill="#d8b494" opacity=".55"/>
+              <rect x="118" y="150" width="290" height="152" rx="10" fill="#fffdf7" transform="rotate(-5 263 226)" stroke="#e6d8c6" stroke-width="2"/>
+              <path d="M148 190h180M148 210h150M148 230h172M148 250h120" stroke="#c8b9a5" stroke-width="5" stroke-linecap="round" transform="rotate(-5 263 226)"/>
+              <path d="M356 168l24-9 8 22-24 8z" fill="#f7a8c0" opacity=".8" transform="rotate(-5 263 226)"/>
+              <ellipse cx="470" cy="272" rx="58" ry="16" fill="#c9a17c" opacity=".6"/>
+              <path d="M436 254h68v-52c0-12-68-12-68 0z" fill="#ffffff" stroke="#e6d8c6" stroke-width="2"/>
+              <path d="M470 202v52" stroke="#e6d8c6" stroke-width="2"/>
+              <path d="M452 176c0-14 36-14 36 0" stroke="#c9a17c" stroke-width="5" fill="none" stroke-linecap="round"/>
+              <g opacity=".7">
+                <circle cx="96" cy="86" r="5" fill="#a98fd8"/>
+                <circle cx="130" cy="64" r="3.6" fill="#f7a8c0"/>
+                <circle cx="560" cy="180" r="4" fill="#8fd6c0"/>
+              </g>
+            </svg>
+            <span class="ty-play" aria-hidden="true"><i></i></span>
+          </div>
+          <div class="ty-video-body">
+            <h3>《外婆的第七本手账》：她用画笔记下每一天的药和每一朵花</h3>
+            <p>编辑部跟拍三个月，记录一位八十二岁长辈的手账日常。她把药盒画成小房子，把阳台的月季画成一排笑脸，第七本手账翻开时，孙女才发现每一页角落都有自己小时候的名字。</p>
+            <div class="ty-video-meta">
+              <span class="ty-author">
+                <span class="ty-avatar" style="background:#7f6bb3;">林</span>
+                林小满 · 驻站创作者
+              </span>
+              <div class="ty-actions">
+                <button class="ty-act" data-act="like" type="button" aria-label="点赞这部作品">♥ <span>1284</span></button>
+                <button class="ty-act" data-act="save" type="button" aria-label="收藏这部作品">☆ 收藏</button>
+                <button class="ty-act" data-act="share" type="button" aria-label="分享这部作品">↗ 分享</button>
+              </div>
+            </div>
+          </div>
+        </article>
+        <div class="ty-focus-side">
+          <article class="ty-mini-card">
+            <div class="ty-mini-cover">
+              <svg viewBox="0 0 320 180" role="img" aria-label="漫画短片《爷爷的自行车后座》缩略封面：老式自行车与树影">
+                <rect width="320" height="180" fill="#e6f0fb"/>
+                <circle cx="248" cy="42" r="26" fill="#ffd9a0" opacity=".7"/>
+                <path d="M0 140h320v40H0z" fill="#b7c9dd" opacity=".6"/>
+                <circle cx="92" cy="122" r="30" fill="none" stroke="#5f7fa2" stroke-width="6"/>
+                <circle cx="212" cy="122" r="30" fill="none" stroke="#5f7fa2" stroke-width="6"/>
+                <path d="M92 122l38-44h54l28 44M130 78h64M164 78l-18 44" stroke="#5f7fa2" stroke-width="5" fill="none" stroke-linecap="round"/>
+                <rect x="122" y="60" width="26" height="9" rx="4" fill="#7f9bbd"/>
+              </svg>
+            </div>
+            <div class="ty-mini-body">
+              <h4>《爷爷的自行车后座》</h4>
+              <p>记忆里的风，和一只总会松开的手</p>
+            </div>
+          </article>
+          <article class="ty-mini-card">
+            <div class="ty-mini-cover">
+              <svg viewBox="0 0 320 180" role="img" aria-label="漫画短片《菜市场里的百岁模特》缩略封面：菜摊与彩色遮阳棚">
+                <rect width="320" height="180" fill="#fff2e2"/>
+                <path d="M0 96h320v84H0z" fill="#f0d8bc"/>
+                <path d="M20 96l34-42 34 42z" fill="#f7a8c0" opacity=".7"/>
+                <path d="M102 96l34-42 34 42z" fill="#8fd6c0" opacity=".7"/>
+                <path d="M184 96l34-42 34 42z" fill="#a98fd8" opacity=".65"/>
+                <rect x="34" y="112" width="70" height="52" rx="6" fill="#fffdf7" stroke="#e2c8a8" stroke-width="2"/>
+                <rect x="126" y="112" width="70" height="52" rx="6" fill="#fffdf7" stroke="#e2c8a8" stroke-width="2"/>
+                <rect x="218" y="112" width="70" height="52" rx="6" fill="#fffdf7" stroke="#e2c8a8" stroke-width="2"/>
+                <circle cx="56" cy="134" r="9" fill="#e58a6d"/>
+                <circle cx="82" cy="140" r="8" fill="#e0b35c"/>
+                <circle cx="150" cy="136" r="10" fill="#8fd6c0"/>
+                <circle cx="242" cy="138" r="9" fill="#a98fd8"/>
+              </svg>
+            </div>
+            <div class="ty-mini-body">
+              <h4>《菜市场里的百岁模特》</h4>
+              <p>她挑菜的样子，像在走一场专属时装秀</p>
+            </div>
+          </article>
+          <article class="ty-mini-card">
+            <div class="ty-mini-cover">
+              <svg viewBox="0 0 320 180" role="img" aria-label="漫画短片《缝纫机没有停》缩略封面：老式缝纫机与线轴">
+                <rect width="320" height="180" fill="#f2ecfb"/>
+                <rect x="0" y="138" width="320" height="42" fill="#d5c7ee"/>
+                <path d="M74 138V88c0-8 8-14 16-14h70v64" stroke="#7f6bb3" stroke-width="7" fill="none" stroke-linecap="round"/>
+                <rect x="146" y="80" width="86" height="14" rx="7" fill="#a98fd8"/>
+                <circle cx="228" cy="94" r="8" fill="#fff" stroke="#7f6bb3" stroke-width="4"/>
+                <rect x="196" y="102" width="42" height="36" rx="5" fill="#fffdf7" stroke="#d5c7ee" stroke-width="2"/>
+                <circle cx="128" cy="122" r="12" fill="#f7a8c0" opacity=".8"/>
+                <path d="M74 138h180" stroke="#7f6bb3" stroke-width="7" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="ty-mini-body">
+              <h4>《缝纫机没有停》</h4>
+              <p>一件旧毛衣，缝合了三代人的冬天</p>
+            </div>
+          </article>
+          <article class="ty-mini-card">
+            <div class="ty-mini-cover">
+              <svg viewBox="0 0 320 180" role="img" aria-label="漫画短片《公园长椅上的合唱团》缩略封面：树木与长椅剪影">
+                <rect width="320" height="180" fill="#eaf6f0"/>
+                <circle cx="62" cy="46" r="30" fill="#8fd6c0" opacity=".6"/>
+                <circle cx="104" cy="56" r="22" fill="#a9e0cd" opacity=".7"/>
+                <circle cx="256" cy="52" r="26" fill="#8fd6c0" opacity=".5"/>
+                <path d="M0 142h320v38H0z" fill="#c4ddce"/>
+                <rect x="88" y="112" width="144" height="10" rx="5" fill="#7a9d8a"/>
+                <path d="M104 122v26M216 122v26" stroke="#7a9d8a" stroke-width="7" stroke-linecap="round"/>
+                <circle cx="134" cy="96" r="10" fill="#f6d9bf"/>
+                <circle cx="162" cy="94" r="10" fill="#f6d9bf"/>
+                <circle cx="190" cy="96" r="10" fill="#f6d9bf"/>
+                <path d="M126 108h72" stroke="#7a9d8a" stroke-width="5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="ty-mini-body">
+              <h4>《公园长椅上的合唱团》</h4>
+              <p>六个平均年龄七十六岁的人，每周排练一次</p>
+            </div>
+          </article>
+          <article class="ty-mini-card">
+            <div class="ty-mini-cover">
+              <svg viewBox="0 0 320 180" role="img" aria-label="漫画短片《她学会了发消息》缩略封面：手机与对话气泡">
+                <rect width="320" height="180" fill="#fff1f5"/>
+                <rect x="118" y="34" width="84" height="120" rx="14" fill="#fffdfd" stroke="#f0c3d3" stroke-width="3"/>
+                <rect x="132" y="54" width="56" height="9" rx="4" fill="#f7a8c0" opacity=".7"/>
+                <rect x="132" y="72" width="40" height="9" rx="4" fill="#e4d7f5"/>
+                <rect x="132" y="90" width="52" height="9" rx="4" fill="#e4d7f5"/>
+                <circle cx="160" cy="134" r="7" fill="#f0c3d3"/>
+                <path d="M40 54h48a12 12 0 0112 12v18a12 12 0 01-12 12H64l-14 12V96h-10a12 12 0 01-12-12V66a12 12 0 0112-12z" fill="#f7a8c0" opacity=".75"/>
+                <path d="M232 96h46a12 12 0 0112 12v16a12 12 0 01-12 12h-24l-12 12v-12h-10a12 12 0 01-12-12v-16a12 12 0 0112-12z" fill="#a98fd8" opacity=".6"/>
+              </svg>
+            </div>
+            <div class="ty-mini-body">
+              <h4>《她学会了发消息》</h4>
+              <p>从“在吗”到一条六十秒语音的进化</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 热门视频流 -->
+  <section class="ty-sec" id="tyStream">
+    <div class="ty-page-wrap">
+      <div class="ty-sec-head">
+        <div>
+          <span class="ty-sec-kicker">TRENDING</span>
+          <h2 class="ty-sec-title">热门内容流 · 社区正在看</h2>
+          <p class="ty-sec-desc">按标签浏览童颜长辈漫画社区热门作品，所有内容均为平台原创或已获正版授权。</p>
+        </div>
+        <a class="ty-sec-link" href="#tySpecial">浏览专题企划</a>
+      </div>
+      <div class="ty-filter-bar" id="tyFilterBar" role="group" aria-label="内容标签筛选">
+        <button class="ty-chip ty-chip-active" data-filter="all" type="button">全部</button>
+        <button class="ty-chip" data-filter="日常记录" type="button">日常记录</button>
+        <button class="ty-chip" data-filter="人物访谈" type="button">人物访谈</button>
+        <button class="ty-chip" data-filter="教程干货" type="button">教程干货</button>
+        <button class="ty-chip" data-filter="城市探索" type="button">城市探索</button>
+        <button class="ty-chip" data-filter="治愈影像" type="button">治愈影像</button>
+      </div>
+      <div class="ty-stream" id="tyStreamGrid">
+        <article class="ty-video-card" data-tags="日常记录 治愈影像">
+          <div class="ty-video-cover">
+            <span class="ty-video-tag">日常记录</span>
+            <svg viewBox="0 0 400 225" role="img" aria-label="漫画作品《清晨五点半的豆浆摊》封面：暖灯下的豆浆摊">
+              <rect width="400" height="225" fill="#fdf0dc"/>
+              <circle cx="320" cy="54" r="30" fill="#ffd9a0" opacity=".7"/>
+              <rect x="0" y="158" width="400" height="67" fill="#cda27b" opacity=".6"/>
+              <rect x="52" y="112" width="150" height="52" rx="8" fill="#fffaf1" stroke="#e3c7a5" stroke-width="2"/>
+              <path d="M72 112v-16h44v16M132 112v-16h44v16" stroke="#e3c7a5" stroke-width="4" fill="none"/>
+              <ellipse cx="236" cy="140" rx="30" ry="10" fill="#f5e3cb"/>
+              <path d="M214 140h44v-34c0-10-44-10-44 0z" fill="#fffdf7" stroke="#e3c7a5" stroke-width="2"/>
+              <circle cx="272" cy="92" r="16" fill="#ffdcae"/>
+              <circle cx="272" cy="92" r="7" fill="#f6c88c"/>
+              <rect x="234" y="40" width="76" height="7" rx="3" fill="#d9b48d"/>
+            </svg>
+            <span class="ty-play" aria-hidden="true"><i></i></span>
+          </div>
+          <div class="ty-video-body">
+            <h3>清晨五点半的豆浆摊</h3>
+            <p>镜头跟着一位六十七岁的摊主，从磨豆到收摊，记录她不紧不慢的一天。</p>
+            <div class="ty-video-meta">
+              <span class="ty-author"><span class="ty-avatar" style="background:#e08a6d;">周</span>周末风</span>
+              <div class="ty-actions">
+                <button class="ty-act" data-act="like" type="button">♥ <span>642</span></button>
+                <button class="ty-act" data-act="save" type="button">☆ 收藏</button>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="ty-video-card" data-tags="人物访谈 城市探索">
+          <div class="ty-video-cover">
+            <span class="ty-video-tag">人物访谈</span>
+            <svg viewBox="0 0 400 225" role="img" aria-label="漫画作品《弄堂口修表匠的四十年》封面：修表台与放大镜">
+              <rect width="400" height="225" fill="#e9e3f7"/>
+              <rect x="0" y="160" width="400" height="65" fill="#c8bce3"/>
+              <circle cx="148" cy="104" r="52" fill="none" stroke="#7f6bb3" stroke-width="7"/>
+              <circle cx="148" cy="104" r="40" fill="#fffdf9" stroke="#b7a6dd" stroke-width="3"/>
+              <path d="M148 104V78M148 104l20 14" stroke="#7f6bb3" stroke-width="4" stroke-linecap="round"/>
+              <rect x="230" y="72" width="30" height="96" rx="6" fill="#fffdf9" stroke="#b7a6dd" stroke-width="2"/>
+              <path d="M238 88h14M238 104h14M238 120h14M238 136h14" stroke="#c8bce3" stroke-width="4" stroke-linecap="round"/>
+              <circle cx="300" cy="130" r="22" fill="#f7a8c0" opacity=".7"/>
+              <path d="M282 152l-8 26M318 152l8 26" stroke="#7f6bb3" stroke-width="5" stroke-linecap="round"/>
+            </svg>
+            <span class="ty-play" aria-hidden="true"><i></i></span>
+          </div>
+          <div class="ty-video-body">
+            <h3>弄堂口修表匠的四十年</h3>
+            <p>他修好过两万只表，却始终留着那块走不准的旧怀表。一次关于时间的访谈。</p>
+            <div class="ty-video-meta">
+              <span class="ty-author"><span class="ty-avatar" style="background:#7f6bb3;">顾</span>顾南枝</span>
+              <div class="ty-actions">
+                <button class="ty-act" data-act="like" type="button">♥ <span>917</span></button>
+                <button class="ty-act" data-act="save" type="button">☆ 收藏</button>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="ty-video-card" data-tags="教程干货 日常记录">
+          <div class="ty-video-cover">
+            <span class="ty-video-tag">教程干货</span>
+            <svg viewBox="0 0 400 225" role="img" aria-label="漫画作品《三分钟学会画长辈的笑脸》封面：速写本与铅笔">
+              <rect width="400" height="225" fill="#eaf6f0"/>
+              <rect x="60" y="40" width="180" height="150" rx="8" fill="#fffdf8" transform="rotate(-4 150 115)" stroke="#cbe5d9" stroke-width="2"/>
+              <circle cx="136" cy="106" r="32" fill="#f6d9bf" transform="rotate(-4 150 115)"/>
+              <path d="M116 88c6-18 44-18 44 0" stroke="#e3d9ea" stroke-width="8" fill="none" stroke-linecap="round" transform="rotate(-4 150 115)"/>
+              <circle cx="126" cy="106" r="3.4" fill="#4a3c63"/>
+              <circle cx="146" cy="106" r="3.4" fill="#4a3c63"/>
+              <path d="M128 120c8 8 16 8 22 0" stroke="#c98a7a" stroke-width="3.4" fill="none" stroke-linecap="round"/>
+              <path d="M268 60l58 128" stroke="#e0b35c" stroke-width="9" stroke-linecap="round"/>
+              <path d="M268 60l-14 30 26 4z" fill="#7f6bb3"/>
+              <circle cx="316" cy="176" r="26" fill="#8fd6c0" opacity=".4"/>
+            </svg>
+            <span class="ty-play" aria-hidden="true"><i></i></span>
+          </div>
+          <div class="ty-video-body">
+            <h3>三分钟学会画长辈的笑脸</h3>
+            <p>从眉眼的弧度到法令纹的走向，插画师分享了六个实用的分步练习。</p>
+            <div class="ty-video-meta">
+              <span class="ty-author"><span class="ty-avatar" style="background:#5aa88d;">何</span>何以为画</span>
+              <div class="ty-actions">
+                <button class="ty-act" data-act="like" type="button">♥ <span>1533</span></button>
+                <button class="ty-act" data-act="save" type="button">☆ 收藏</button>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="ty-video-card" data-tags="城市探索 治愈影像">
+          <div class="ty-video-cover">
+            <span class="ty-video-tag">城市探索</span>
+            <svg viewBox="0 0 400 225" role="img" aria-label="漫画作品《坐三站公交去看老城墙》封面：公交车与城墙轮廓">
+              <rect width="400" height="225" fill="#e4eef7"/>
+              <circle cx="330" cy="46" r="24" fill="#ffd9a0" opacity=".72"/>
+              <path d="M0 156h400v69H0z" fill="#bfd2e2"/>
+              <path d="M0 128l44-38 44 38M92 128l48-42 48 42M192 128l40-32 40 32M280 128l46-40 46 40" fill="#98b3c9" opacity=".8"/>
+              <rect x="52" y="140" width="140" height="52" rx="10" fill="#fffdf9" stroke="#a9c2d6" stroke-width="2"/>
+              <rect x="66" y="150" width="42" height="28" rx="5" fill="#cfe3f2"/>
+              <rect x="118" y="150" width="42" height="28" rx="5" fill="#cfe3f2"/>
+              <circle cx="84" cy="194" r="13" fill="#7d99b3"/>
+              <circle cx="164" cy="194" r="13" fill="#7d99b3"/>
+            </svg>
+            <span class="ty-play" aria-hidden="true"><i></i></span>
+          </div>
+          <div class="ty-video-body">
+            <h3>坐三站公交去看老城墙</h3>
+            <p>一位退休教师用手机带着观众，重走他年轻时常走的那条城市线路。</p>
+            <div class="ty-video-meta">
+              <span class="ty-author"><span class="ty-avatar" style="background:#5f7fa2;">秦</span>秦叔的镜头</span>
+              <div class="ty-actions">
+                <button class="ty-act" data-act="like" type="button">♥ <span>428</span></button>
+                <button class="ty-act" data-act="save" type="button">☆ 收藏</button>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="ty-video-card" data-tags="治愈影像 日常记录">
+          <div class="ty-video-cover">
+            <span class="ty-video-tag">治愈影像</span>
+            <svg viewBox="0 0 400 225" role="img" aria-label="漫画作品《晒被子的午后》封面：阳台上晾晒的被单与猫">
+              <rect width="400" height="225" fill="#fff5e8"/>
+              <path d="M0 150h400v75H0z" fill="#ecd6bc"/>
+              <path d="M0 150l400-76" stroke="#d8bfa2" stroke-width="4"/>
+              <rect x="90" y="52" width="90" height="110" rx="6" fill="#fbf3ff" stroke="#e0cfee" stroke-width="2" transform="rotate(3 135 107)"/>
+              <rect x="184" y="60" width="90" height="110" rx="6" fill="#e9f7f1" stroke="#cbe5d9" stroke-width="2" transform="rotate(-4 229 115)"/>
+              <circle cx="310" cy="150" r="26" fill="#f7a8c0" opacity=".55"/>
+              <path d="M296 138c-6-14 4-22 14-22s20 8 14 22" fill="#f0b6c8"/>
+              <circle cx="304" cy="132" r="2.6" fill="#5a2b3c"/>
+              <circle cx="316" cy="132" r="2.6" fill="#5a2b3c"/>
+            </svg>
+            <span class="ty-play" aria-hidden="true"><i></i></span>
+          </div>
+          <div class="ty-video-body">
+            <h3>晒被子的午后</h3>
+            <p>没有台词的八分钟，只有阳光、被单和一位在阳台打盹的老人。</p>
+            <div class="ty-video-meta">
+              <span class="ty-author"><span class="ty-avatar" style="background:#e08a6d;">简</span>简一帧</span>
+              <div class="ty-actions">
+                <button class="ty-act" data-act="like" type="button">♥ <span>806</span></button>
+                <button class="ty-act" data-act="save" type="button">☆ 收藏</button>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="ty-video-card" data-tags="人物访谈 教程干货">
+          <div class="ty-video-cover">
+            <span class="ty-video-tag">人物访谈</span>
+            <svg viewBox="0 0 400 225" role="img" aria-label="漫画作品《八十岁开始学画画》封面：画架与调色盘">
+              <rect width="400" height="225" fill="#f4edfb"/>
+              <rect x="0" y="168" width="400" height="57" fill="#dccfef"/>
+              <path d="M120 168l30-104h40l30 104" stroke="#8a76b8" stroke-width="6" fill="none" stroke-linecap="round"/>
+              <rect x="148" y="64" width="94" height="70" rx="4" fill="#fffdf9" stroke="#b9a8dc" stroke-width="2"/>
+              <circle cx="180" cy="92" r="14" fill="#f7a8c0" opacity=".8"/>
+              <path d="M162 116c10-16 26-16 36 0" stroke="#8fd6c0" stroke-width="5" fill="none" stroke-linecap="round"/>
+              <ellipse cx="292" cy="140" rx="38" ry="20" fill="#fffdf9" stroke="#b9a8dc" stroke-width="2"/>
+              <circle cx="276" cy="132" r="6" fill="#e08a6d"/>
+              <circle cx="294" cy="126" r="6" fill="#8fd6c0"/>
+              <circle cx="310" cy="136" r="6" fill="#7f6bb3"/>
+            </svg>
+            <span class="ty-play" aria-hidden="true"><i></i></span>
+          </div>
+          <div class="ty-video-body">
+            <h3>八十岁开始学画画</h3>
+            <p>她用两年时间从握不稳笔，到办起社区小画展。访谈里她只说了一句：来得及。</p>
+            <div class="ty-video-meta">
+              <span class="ty-author"><span class="ty-avatar" style="background:#8a76b8;">苏</span>苏木记</span>
+              <div class="ty-actions">
+                <button class="ty-act" data-act="like" type="button">♥ <span>2210</span></button>
+                <button class="ty-act" data-act="save" type="button">☆ 收藏</button>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="ty-stream-more">
+        <button class="ty-btn ty-btn-ghost" id="tyLoadMore" type="button">加载更多精品内容</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 专题企划 -->
+  <section class="ty-sec" id="tySpecial">
+    <div class="ty-page-wrap">
+      <div class="ty-special">
+        <div class="ty-page-wrap">
+          <div class="ty-sec-head">
+            <div>
+              <span class="ty-sec-kicker">SERIES</span>
+              <h2 class="ty-sec-title">专题企划 · 成组地看，才看得完整</h2>
+              <p class="ty-sec-desc">专题由编辑部策划、创作者共同完成，围绕童颜长辈漫画的不同切面展开持续更新。</p>
+            </div>
+            <a class="ty-sec-link" href="#tyCreators">认识专题作者</a>
+          </div>
+          <div class="ty-special-grid">
+            <article class="ty-special-card">
+              <div class="ty-special-cover">
+                <span class="ty-special-status ty-status-live">更新至 12 集</span>
+                <svg viewBox="0 0 400 250" role="img" aria-label="专题《街角慢镜头》封面：街道拐角与慢速行走的身影">
+                  <rect width="400" height="250" fill="#f0e8fb"/>
+                  <path d="M0 190h400v60H0z" fill="#cfc1e6"/>
+                  <rect x="42" y="52" width="96" height="138" rx="8" fill="#fffdf9" stroke="#c8b7e2" stroke-width="2"/>
+                  <rect x="60" y="76" width="60" height="10" rx="4" fill="#e0d5f2"/>
+                  <rect x="60" y="96" width="42" height="10" rx="4" fill="#e0d5f2"/>
+                  <rect x="170" y="80" width="86" height="110" rx="8" fill="#fffdf9" stroke="#c8b7e2" stroke-width="2"/>
+                  <circle cx="212" cy="120" r="20" fill="#f6d9bf"/>
+                  <path d="M196 110c2-14 30-14 32 0" stroke="#e8dff4" stroke-width="7" fill="none" stroke-linecap="round"/>
+                  <path d="M198 160c4-18 24-18 28 0" fill="#a98fd8"/>
+                  <circle cx="320" cy="128" r="30" fill="#ffd9a0" opacity=".6"/>
+                  <path d="M290 190h60" stroke="#b7a6dd" stroke-width="6" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <div class="ty-special-body">
+                <h3>街角慢镜头</h3>
+                <p>把镜头放慢，去看长辈们在城市拐角处的停顿：等一盏灯、让一个人、抬头看一次云。</p>
+                <div class="ty-special-foot"><span>策划 · 品牌编辑部</span><b>持续更新中</b></div>
+              </div>
+            </article>
+            <article class="ty-special-card">
+              <div class="ty-special-cover">
+                <span class="ty-special-status">共 8 集</span>
+                <svg viewBox="0 0 400 250" role="img" aria-label="专题《手上有故事》封面：手部特写与线稿纹理">
+                  <rect width="400" height="250" fill="#fff2e6"/>
+                  <circle cx="200" cy="126" r="88" fill="#f9e2ca"/>
+                  <path d="M144 176c0-46 20-84 56-84s56 38 56 84" fill="none" stroke="#d9a97e" stroke-width="7" stroke-linecap="round"/>
+                  <path d="M164 132l10 44M188 120l6 56M216 120l-4 56M240 134l-8 44" stroke="#d9a97e" stroke-width="7" stroke-linecap="round"/>
+                  <path d="M66 74c18-14 38 0 30 18" stroke="#f7a8c0" stroke-width="5" fill="none" stroke-linecap="round"/>
+                  <path d="M310 190c14-10 30 0 24 14" stroke="#8fd6c0" stroke-width="5" fill="none" stroke-linecap="round"/>
+                  <circle cx="330" cy="68" r="6" fill="#a98fd8"/>
+                  <circle cx="70" cy="196" r="5" fill="#e08a6d"/>
+                </svg>
+              </div>
+              <div class="ty-special-body">
+                <h3>手上有故事</h3>
+                <p>切菜的手、织毛衣的手、握笔的手。镜头只拍手，让细节替长辈说话。</p>
+                <div class="ty-special-foot"><span>出品 · 苏木记工作室</span><b>已完结</b></div>
+              </div>
+            </article>
+            <article class="ty-special-card">
+              <div class="ty-special-cover">
+                <span class="ty-special-status ty-status-live">征集中</span>
+                <svg viewBox="0 0 400 250" role="img" aria-label="专题《我家的童颜长辈》封面：相框与合影构图">
+                  <rect width="400" height="250" fill="#e8f7f1"/>
+                  <rect x="52" y="40" width="140" height="170" rx="8" fill="#fffdf9" stroke="#bfe3d3" stroke-width="3"/>
+                  <circle cx="106" cy="106" r="28" fill="#f6d9bf"/>
+                  <path d="M84 96c4-20 40-20 44 0" stroke="#e2f0e9" stroke-width="8" fill="none" stroke-linecap="round"/>
+                  <circle cx="98" cy="108" r="3.4" fill="#4a3c63"/>
+                  <circle cx="116" cy="108" r="3.4" fill="#4a3c63"/>
+                  <path d="M100 122c5 5 11 5 16 0" stroke="#c98a7a" stroke-width="3" fill="none" stroke-linecap="round"/>
+                  <path d="M76 178c8-26 52-26 60 0" fill="#8fd6c0"/>
+                  <rect x="212" y="70" width="140" height="150" rx="8" fill="#fffdf9" stroke="#bfe3d3" stroke-width="3" transform="rotate(5 282 145)"/>
+                  <circle cx="262" cy="130" r="22" fill="#f7a8c0" opacity=".7" transform="rotate(5 282 145)"/>
+                  <path d="M238 190c6-20 42-20 48 0" fill="#a98fd8" opacity=".8" transform="rotate(5 282 145)"/>
+                </svg>
+              </div>
+              <div class="ty-special-body">
+                <h3>我家的童颜长辈</h3>
+                <p>面向全社区的征集企划：上传一张照片或一段影像，讲述你家那位童心未泯的长辈。</p>
+                <div class="ty-special-foot"><span>活动 · 社区共创</span><b>报名进行中</b></div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 创作者矩阵 -->
+  <section class="ty-sec" id="tyCreators">
+    <div class="ty-page-wrap">
+      <div class="ty-sec-head">
+        <div>
+          <span class="ty-sec-kicker">CREATORS</span>
+          <h2 class="ty-sec-title">创作者矩阵 · 他们在讲这些故事</h2>
+          <p class="ty-sec-desc">童颜长辈漫画社区汇聚漫画家、纪录片作者与素人记录者，点击卡片可查看作品与简介。</p>
+        </div>
+        <a class="ty-sec-link" href="#tyFaq">了解签约流程</a>
+      </div>
+      <div class="ty-creators">
+        <article class="ty-creator-card">
+          <div class="ty-creator-avatar" style="background:linear-gradient(135deg,#7f6bb3,#a98fd8);">林</div>
+          <h3>林小满</h3>
+          <span class="ty-creator-field">日常漫画 · 手账</span>
+          <p>喜欢把生活画成四格，擅长在琐碎里找出笑点，作品常被社区转发。</p>
+          <div class="ty-creator-nums">
+            <div><b>86</b><span>作品</span></div>
+            <div><b>12.4万</b><span>粉丝</span></div>
+          </div>
+          <button class="ty-creator-btn" type="button" data-creator="林小满">查看主页</button>
+        </article>
+        <article class="ty-creator-card">
+          <div class="ty-creator-avatar" style="background:linear-gradient(135deg,#5aa88d,#8fd6c0);">顾</div>
+          <h3>顾南枝</h3>
+          <span class="ty-creator-field">人物访谈 · 口述史</span>
+          <p>十年访谈经验，相信每个人的一生都值得一部纪录片，语速慢，问题准。</p>
+          <div class="ty-creator-nums">
+            <div><b>54</b><span>作品</span></div>
+            <div><b>9.1万</b><span>粉丝</span></div>
+          </div>
+          <button class="ty-creator-btn" type="button" data-creator="顾南枝">查看主页</button>
+        </article>
+        <article class="ty-creator-card">
+          <div class="ty-creator-avatar" style="background:linear-gradient(135deg,#e08a6d,#f7a8c0);">何</div>
+          <h3>何以为画</h3>
+          <span class="ty-creator-field">教程干货 · 插画</span>
+          <p>插画教师，作品教程步骤清晰，被不少新手称为“最不劝退的入门老师”。</p>
+          <div class="ty-creator-nums">
+            <div><b>132</b><span>作品</span></div>
+            <div><b>18.6万</b><span>粉丝</span></div>
+          </div>
+          <button class="ty-creator-btn" type="button" data-creator="何以为画">查看主页</button>
+        </article>
+        <article class="ty-creator-card">
+          <div class="ty-creator-avatar" style="background:linear-gradient(135deg,#5f7fa2,#98b3c9);">秦</div>
+          <h3>秦叔的镜头</h3>
+          <span class="ty-creator-field">城市探索 · 记录</span>
+          <p>退休教师转行做影像记录，用手机拍城市，一年走坏三双鞋，乐在其中。</p>
+          <div class="ty-creator-nums">
+            <div><b>71</b><span>作品</span></div>
+            <div><b>6.8万</b><span>粉丝</span></div>
+          </div>
+          <button class="ty-creator-btn" type="button" data-creator="秦叔的镜头">查看主页</button>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 故事随笔 & 作品墙 -->
+  <section class="ty-sec" id="tyStories">
+    <div class="ty-page-wrap">
+      <div class="ty-sec-head">
+        <div>
+          <span class="ty-sec-kicker">STORIES</span>
+          <h2 class="ty-sec-title">故事随笔 · 文字也是影像的一部分</h2>
+          <p class="ty-sec-desc">创作者在拍摄之外写下的短文，与童颜长辈漫画的影像互为注脚。</p>
+        </div>
+        <a class="ty-sec-link" href="#tyContact">投稿你的故事</a>
+      </div>
+      <div class="ty-stories">
+        <article class="ty-story-card">
+          <div class="ty-story-meta"><span>林小满</span><span>·</span><span>2026年11月14日</span></div>
+          <h3>外婆把手账翻到最后一页，我才知道她一直在学写字</h3>
+          <p>她写得很慢，一笔一画，像在田里插秧。第七本手账的最后三页，是抄的菜谱，字迹比前面工整许多。她说，等你下次回来，我想做给你吃。那一刻我突然明白，所谓童颜，不是不会老，而是一直保留着期待。</p>
+        </article>
+        <article class="ty-story-card">
+          <div class="ty-story-meta"><span>顾南枝</span><span>·</span><span>2026年11月09日</span></div>
+          <h3>修表匠说，时间修不好，只能让它走得准一点</h3>
+          <p>采访结束时他赠我一句话：人老了最怕的不是慢，是没人等你慢。我把这句话写在笔记本上，回程的公交坐过了三站。后来这段采访剪成十一分钟，评论区里有很多人说，想起了自己的父亲。</p>
+        </article>
+        <article class="ty-story-card">
+          <div class="ty-story-meta"><span>秦叔的镜头</span><span>·</span><span>2026年11月03日</span></div>
+          <h3>那天城墙下有些风，她把手套给了旁边的小朋友</h3>
+          <p>我原本只想拍城墙的砖缝，镜头一偏，就拍到了这一幕。回去剪片时犹豫了很久要不要保留这段背影，最后还是留下了。社区里的朋友说，这就是我们做童颜长辈漫画的初心：不用解说，画面自己会说话。</p>
+        </article>
+        <article class="ty-story-card">
+          <div class="ty-story-meta"><span>何以为画</span><span>·</span><span>2026年10月28日</span></div>
+          <h3>画好一位长辈，先要学会观察他坐着时的样子</h3>
+          <p>很多学员问我怎么画皱纹，我总说先别急着画线，先看他坐着时手放在哪里。皱纹是结果的痕迹，姿态才是故事的开头。这份教程后来被社区做成了练习打卡活动，收到四百多张手绘作业。</p>
+        </article>
+      </div>
+
+      <div class="ty-wall">
+        <figure class="ty-wall-item ty-wall-big">
+          <svg viewBox="0 0 480 320" role="img" aria-label="作品墙大图：黄昏下的长椅与两个并肩坐着的背影">
+            <rect width="480" height="320" fill="#f7ecdf"/>
+            <circle cx="378" cy="72" r="42" fill="#ffd9a0" opacity=".8"/>
+            <path d="M0 226h480v94H0z" fill="#d9bfa3"/>
+            <path d="M0 226l240-58 240 58" fill="#e8d3b9"/>
+            <rect x="150" y="182" width="180" height="12" rx="6" fill="#a8896b"/>
+            <path d="M170 194v42M310 194v42" stroke="#a8896b" stroke-width="8" stroke-linecap="round"/>
+            <circle cx="206" cy="158" r="15" fill="#f6d9bf"/>
+            <path d="M192 178c2-14 26-14 28 0" fill="#7f6bb3"/>
+            <circle cx="270" cy="152" r="13" fill="#f9dfc9"/>
+            <path d="M258 172c2-12 22-12 24 0" fill="#f2b8c9"/>
+            <path d="M60 120c14-10 30 2 22 16" stroke="#c8a98a" stroke-width="4" fill="none" stroke-linecap="round"/>
+            <path d="M420 168c14-8 26 4 18 16" stroke="#c8a98a" stroke-width="4" fill="none" stroke-linecap="round"/>
+          </svg>
+          <figcaption>《黄昏长椅》 · 顾南枝 摄制</figcaption>
+        </figure>
+        <figure class="ty-wall-item ty-wall-mid">
+          <svg viewBox="0 0 300 300" role="img" aria-label="作品墙中图：窗台上一排多肉与一只旧搪瓷杯">
+            <rect width="300" height="300" fill="#eef7f2"/>
+            <path d="M0 200h300v100H0z" fill="#cfe5da"/>
+            <rect x="34" y="150" width="52" height="58" rx="8" fill="#fffdf7" stroke="#bcd8ca" stroke-width="2"/>
+            <circle cx="60" cy="140" r="22" fill="#8fd6c0"/>
+            <circle cx="76" cy="152" r="14" fill="#a9e0cd"/>
+            <rect x="112" y="158" width="54" height="50" rx="8" fill="#fffdf7" stroke="#bcd8ca" stroke-width="2"/>
+            <circle cx="139" cy="146" r="20" fill="#7fcbb2"/>
+            <rect x="196" y="132" width="52" height="76" rx="10" fill="#fffdf7" stroke="#bcd8ca" stroke-width="2"/>
+            <path d="M248 156c14 0 14 20 0 20" stroke="#bcd8ca" stroke-width="4" fill="none"/>
+            <circle cx="222" cy="152" r="5" fill="#e08a6d" opacity=".6"/>
+          </svg>
+          <figcaption>《窗台的小花园》 · 林小满 绘</figcaption>
+        </figure>
+        <figure class="ty-wall-item ty-wall-sm">
+          <svg viewBox="0 0 300 300" role="img" aria-label="作品墙小图：一只毛线团与两根织针">
+            <rect width="300" height="300" fill="#fdf0f5"/>
+            <circle cx="150" cy="170" r="62" fill="#f7a8c0"/>
+            <path d="M104 148c30-20 62 6 92-14M100 180c30-18 66 8 98-12M106 208c30-16 62 4 90-14" stroke="#e78aab" stroke-width="4" fill="none" stroke-linecap="round"/>
+            <path d="M62 84l96 130M238 84l-96 130" stroke="#a98fd8" stroke-width="7" stroke-linecap="round"/>
+            <circle cx="62" cy="84" r="7" fill="#7f6bb3"/>
+            <circle cx="238" cy="84" r="7" fill="#7f6bb3"/>
+          </svg>
+          <figcaption>《冬天的针脚》 · 苏木记</figcaption>
+        </figure>
+        <figure class="ty-wall-item ty-wall-mid">
+          <svg viewBox="0 0 300 300" role="img" aria-label="作品墙中图：菜市场的彩色遮阳棚与一筐蔬菜">
+            <rect width="300" height="300" fill="#fff4e4"/>
+            <path d="M0 120h300v180H0z" fill="#f2ddc2"/>
+            <path d="M20 120l30-44 30 44z" fill="#f7a8c0" opacity=".7"/>
+            <path d="M96 120l34-48 34 48z" fill="#8fd6c0" opacity=".7"/>
+            <path d="M180 120l32-46 32 46z" fill="#a98fd8" opacity=".65"/>
+            <path d="M262 120l30-44 30 44z" fill="#ffd9a0" opacity=".8"/>
+            <rect x="82" y="170" width="140" height="86" rx="10" fill="#fffdf7" stroke="#e2c8a8" stroke-width="2"/>
+            <circle cx="118" cy="208" r="14" fill="#e58a6d"/>
+            <circle cx="152" cy="200" r="11" fill="#8fd6c0"/>
+            <circle cx="186" cy="212" r="13" fill="#e0b35c"/>
+            <path d="M106 236h92" stroke="#e2c8a8" stroke-width="4" stroke-linecap="round"/>
+          </svg>
+          <figcaption>《早晨的菜摊》 · 秦叔的镜头</figcaption>
+        </figure>
+        <figure class="ty-wall-item ty-wall-sm">
+          <svg viewBox="0 0 300 300" role="img" aria-label="作品墙小图：一支笔与一张写了字的练习纸">
+            <rect width="300" height="300" fill="#f2f0fb"/>
+            <rect x="52" y="46" width="196" height="208" rx="10" fill="#fffdf9" stroke="#d6cdec" stroke-width="2" transform="rotate(-3 150 150)"/>
+            <path d="M78 96h130M78 124h96M78 152h118M78 180h84" stroke="#d6cdec" stroke-width="7" stroke-linecap="round" transform="rotate(-3 150 150)"/>
+            <path d="M214 196l34 76" stroke="#8a76b8" stroke-width="10" stroke-linecap="round"/>
+            <path d="M214 196l-10 24 22 4z" fill="#e08a6d"/>
+          </svg>
+          <figcaption>《第一次写家书》 · 何以为画</figcaption>
+        </figure>
+        <figure class="ty-wall-item ty-wall-sm">
+          <svg viewBox="0 0 300 300" role="img" aria-label="作品墙小图：公园小路与飘落的树叶">
+            <rect width="300" height="300" fill="#edf6f1"/>
+            <path d="M0 256h300v44H0z" fill="#c9e2d6"/>
+            <path d="M120 300c0-120 20-190 30-190s30 70 30 190" fill="#f6efe4"/>
+            <path d="M0 0v300h26C46 160 46 60 60 0z" fill="#9fd3bd" opacity=".55"/>
+            <path d="M300 0v300h-26c-20-140-20-240-34-300z" fill="#9fd3bd" opacity=".55"/>
+            <path d="M198 120c10-16 28-8 26 8-2 14-20 18-26 4z" fill="#ffd9a0"/>
+            <path d="M92 186c10-14 26-6 24 8-2 12-18 16-24 4z" fill="#f7a8c0" opacity=".8"/>
+          </svg>
+          <figcaption>《落叶的小路》 · 简一帧</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- 社区评价 -->
+  <section class="ty-sec" id="tyComments">
+    <div class="ty-page-wrap">
+      <div class="ty-comments">
+        <div class="ty-page-wrap">
+          <div class="ty-sec-head">
+            <div>
+              <span class="ty-sec-kicker">VOICES</span>
+              <h2 class="ty-sec-title">社区评价 · 他们这样说起这里</h2>
+              <p class="ty-sec-desc">真实的用户反馈来自社区留言与内容评论区，我们保留原始语气。</p>
+            </div>
+            <a class="ty-sec-link" href="#tyContact">说出你的看法</a>
+          </div>
+          <div class="ty-comment-list">
+            <article class="ty-comment">
+              <div class="ty-comment-head">
+                <span class="ty-avatar" style="background:#7f6bb3;">小</span>
+                <b>小满田</b><span>2026/11/15</span>
+              </div>
+              <p>第一次在童颜长辈漫画看到<em>《外婆的第七本手账》</em>就哭了，画面很克制，没有煽情，反而更有力量。第二天我也给奶奶打了个电话。</p>
+              <div class="ty-comment-stars">★★★★★</div>
+            </article>
+            <article class="ty-comment">
+              <div class="ty-comment-head">
+                <span class="ty-avatar" style="background:#5aa88d;">阿</span>
+                <b>阿青画不出</b><span>2026/11/13</span>
+              </div>
+              <p>教程区是真的实用，跟着“三分钟学会画长辈的笑脸”练了两周，线条终于不抖了。希望平台多出一点分步骤的精品内容。</p>
+              <div class="ty-comment-stars">★★★★★</div>
+            </article>
+            <article class="ty-comment">
+              <div class="ty-comment-head">
+                <span class="ty-avatar" style="background:#e08a6d;">林</span>
+                <b>林间事</b><span>2026/11/11</span>
+              </div>
+              <p>投稿流程比想象中顺畅，审核会给具体意见，不是一句“不符合”就完了。作为新人创作者，这种被认真对待的感觉挺难得。</p>
+              <div class="ty-comment-stars">★★★★☆</div>
+            </article>
+            <article class="ty-comment">
+              <div class="ty-comment-head">
+                <span class="ty-avatar" style="background:#5f7fa2;">老</span>
+                <b>老周不下班</b><span>2026/11/08</span>
+              </div>
+              <p>专题《手上有故事》我连着看了三遍。镜头只拍手，却什么都说清楚了。这种在垂直领域深耕的内容，值得多给一点耐心。</p>
+              <div class="ty-comment-stars">★★★★★</div>
+            </article>
+            <article class="ty-comment">
+              <div class="ty-comment-head">
+                <span class="ty-avatar" style="background:#a98fd8;">子</span>
+                <b>子夜读书</b><span>2026/11/05</span>
+              </div>
+              <p>画质和字幕都很舒服，播放页没有乱七八糟的弹窗，社区氛围也好。唯一的小建议是希望增加按地区筛选创作者的功能。</p>
+              <div class="ty-comment-stars">★★★★☆</div>
+            </article>
+            <article class="ty-comment">
+              <div class="ty-comment-head">
+                <span class="ty-avatar" style="background:#c47ba8;">桃</span>
+                <b>桃子汽水</b><span>2026/11/02</span>
+              </div>
+              <p>参加了“我家的童颜长辈”征集，没想到被编辑推荐到首页，家里人比我还高兴。谢谢这个社区，让普通人的记录也能被看见。</p>
+              <div class="ty-comment-stars">★★★★★</div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 创作灵感 & 榜单 -->
+  <section class="ty-sec" id="tyInspire">
+    <div class="ty-page-wrap">
+      <div class="ty-inspire-grid">
+        <div class="ty-inspire-card">
+          <h3>创作灵感 · 本周选题与剪辑思路</h3>
+          <p>由编辑部与驻站创作者共同整理的轻量提示，帮助你把身边的瞬间变成一部完整的童颜长辈漫画作品。</p>
+          <ul class="ty-inspire-list">
+            <li><span>1</span>试试只拍长辈的一天中的“三个动作”：起床、坐下、关灯，用固定机位串起来。</li>
+            <li><span>2</span>标题建议用具体名词代替形容词，例如“阳台上那盆没开花的茉莉”比“温暖的日常”更有画面。</li>
+            <li><span>3</span>剪辑时保留两秒的环境音空白，比配乐更能传递真实的呼吸感。</li>
+            <li><span>4</span>漫画分镜可以先用手机拍下真实场景，再照着改画，细节会更准确。</li>
+            <li><span>5</span>参加社区挑战时，记得在简介里写清拍摄时间与人物关系，方便编辑推荐。</li>
+          </ul>
+        </div>
+        <div class="ty-rank-card">
+          <h3>社区口碑榜 · 本周</h3>
+          <div class="ty-rank-row"><span class="ty-rank-num">1</span><b>傍晚的风</b><span>好评 98%</span></div>
+          <div class="ty-rank-row"><span class="ty-rank-num">2</span><b>外婆的第七本手账</b><span>好评 97%</span></div>
+          <div class="ty-rank-row"><span class="ty-rank-num">3</span><b>八十岁开始学画画</b><span>好评 96%</span></div>
+          <div class="ty-rank-row"><span class="ty-rank-num">4</span><b>清晨五点半的豆浆摊</b><span>好评 95%</span></div>
+          <div class="ty-rank-row"><span class="ty-rank-num">5</span><b>晒被子的午后</b><span>好评 94%</span></div>
+          <div class="ty-rank-row"><span class="ty-rank-num">6</span><b>坐三站公交去看老城墙</b><span>好评 93%</span></div>
+          <p style="font-size:12px;color:var(--ty-color-muted);margin-top:14px;border-top:1px dashed var(--ty-color-line);padding-top:12px;">榜单依据社区评分、完播情况与编辑复核综合生成，每周一更新。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 企业动态 & 合作 -->
+  <section class="ty-sec" id="tyNews">
+    <div class="ty-page-wrap">
+      <div class="ty-sec-head">
+        <div>
+          <span class="ty-sec-kicker">NEWS</span>
+          <h2 class="ty-sec-title">企业动态 · 官方发布与更新日志</h2>
+          <p class="ty-sec-desc">关于童颜长辈漫画的品牌资讯、内容更新与合作进展，均以官方发布为准。</p>
+        </div>
+        <a class="ty-sec-link" href="#tyContact">媒体联络</a>
+      </div>
+      <div class="ty-news-grid">
+        <div class="ty-news-list">
+          <article class="ty-news-item">
+            <div class="ty-news-date"><b>18</b><span>11月</span></div>
+            <div>
+              <h4><span class="ty-news-tag">专题</span>《街角慢镜头》第二季上线，12 部原创作品同步更新</h4>
+              <p>本季以城市公共空间为观察切口，邀请六位创作者参与拍摄与绘制，专题页已同步开放观看与讨论。</p>
+            </div>
+          </article>
+          <article class="ty-news-item">
+            <div class="ty-news-date"><b>15</b><span>11月</span></div>
+            <div>
+              <h4><span class="ty-news-tag">活动</span>创作者冬季企划开放报名，共 46 个创作席位</h4>
+              <p>企划围绕“家里的那位童颜长辈”展开，入选作品将获得制作支持与首页推荐资源，报名截止 12 月 10 日。</p>
+            </div>
+          </article>
+          <article class="ty-news-item">
+            <div class="ty-news-date"><b>12</b><span>11月</span></div>
+            <div>
+              <h4><span class="ty-news-tag">内容</span>高清正版片库扩容，新增 38 部精品内容</h4>
+              <p>本次更新涵盖日常记录、人物访谈与治愈影像三类题材，全部内容已完成版权核验与字幕校对。</p>
+            </div>
+          </article>
+          <article class="ty-news-item">
+            <div class="ty-news-date"><b>08</b><span>11月</span></div>
+            <div>
+              <h4><span class="ty-news-tag">社区</span>本周社区投票结果公布，《傍晚的风》位列口碑榜第一</h4>
+              <p>共有 3246 位社区用户参与投票，编辑部将邀请该作品创作者进行一次创作分享直播。</p>
+            </div>
+          </article>
+          <article class="ty-news-item">
+            <div class="ty-news-date"><b>02</b><span>11月</span></div>
+            <div>
+              <h4><span class="ty-news-tag">品牌</span>童颜长辈漫画与三家公益机构达成年度合作</h4>
+              <p>合作将围绕社区长者影像记录课程展开，预计覆盖十二个社区，提供免费拍摄指导与设备借用。</p>
+            </div>
+          </article>
+        </div>
+        <div>
+          <h3 style="font-size:15.5px;color:var(--ty-color-brand-deep);margin-bottom:12px;">合作品牌与伙伴</h3>
+          <div class="ty-partners">
+            <div class="ty-partner"><i style="background:#7f6bb3;">文</i>城市文化馆</div>
+            <div class="ty-partner"><i style="background:#5aa88d;">影</i>南方影像社</div>
+            <div class="ty-partner"><i style="background:#e08a6d;">书</i>一页书房</div>
+            <div class="ty-partner"><i style="background:#5f7fa2;">年</i>银龄公益计划</div>
+            <div class="ty-partner"><i style="background:#c47ba8;">画</i>白纸插画社</div>
+            <div class="ty-partner"><i style="background:#a98fd8;">映</i>拾光放映厅</div>
+          </div>
+          <div style="margin-top:22px;background:#fff;border:1px solid var(--ty-color-line);border-radius:var(--ty-radius-md);padding:18px 20px;">
+            <p style="font-size:13px;color:var(--ty-color-muted);line-height:1.8;">童颜长辈漫画持续与高校、社区与文创机构建立合作，共同推动代际影像记录的专业化与普及化。合作咨询请通过下方联系方式与品牌部取得联系。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="ty-sec" id="tyFaq">
+    <div class="ty-page-wrap">
+      <div class="ty-faq-wrap">
+        <div class="ty-faq-side">
+          <h3>还有疑问？</h3>
+          <p>关于投稿、版权与社区规则，我们整理了常见问题。若仍未解答，欢迎通过联系模块与官方团队沟通，工作日一般在 24 小时内回复。</p>
+          <a class="ty-btn ty-btn-primary" href="#tyContact">联系官方团队</a>
+        </div>
+        <div class="ty-faq-list">
+          <details open>
+            <summary>投稿童颜长辈漫画需要满足哪些条件？</summary>
+            <p>作品须为原创或已获得完整授权，内容围绕代际故事、长辈生活或相关题材展开，画面与音轨清晰。首次投稿可在投稿入口填写作品信息，审核团队会在三个工作日内给出反馈意见。</p>
+          </details>
+          <details>
+            <summary>平台对作品版权是如何保护的？</summary>
+            <p>所有上架内容均需通过版权核验，作者保留署名权，平台仅获得约定范围内的展示授权。若发现搬运或侵权内容，可通过举报入口提交材料，核实后将下架并依据社区规则处理。</p>
+          </details>
+          <details>
+            <summary>新人创作者能获得哪些支持？</summary>
+            <p>新人可参加每季度的创作者企划与挑战活动，入选作品会获得首页推荐位、制作指导与设备借用支持。编辑部也会定期整理选题建议与剪辑思路，帮助创作者提升作品的完成度。</p>
+          </details>
+          <details>
+            <summary>如何参加社区的话题挑战与投票？</summary>
+            <p>登录后在专题企划与社区话题页即可看到当前进行中的活动，按页面说明上传作品或参与投票即可。活动结果会在企业动态栏目公布，优秀作品将进入季度精品内容推荐。</p>
+          </details>
+          <details>
+            <summary>内容更新频率是怎样的？</summary>
+            <p>焦点内容与热门内容流每日更新，专题企划按季推进，企业动态与更新日志在工作日不定期发布。重大品牌活动与比赛报名信息会提前在公告条与动态栏目同步。</p>
+          </details>
+          <details>
+            <summary>作品可以下载到本地保存吗？</summary>
+            <p>部分获得作者授权的精品内容支持下载，下载入口位于作品详情页。下载文件仅限个人学习与收藏使用，不得用于商业传播，具体以页面授权说明为准。</p>
+          </details>
+          <details>
+            <summary>如何与平台建立品牌或机构合作？</summary>
+            <p>可通过联系模块中的商务邮箱提交合作意向，说明机构背景、合作方向与预期周期，品牌部会安排专人对沟通。我们也欢迎社区、学校与公益组织共同参与代际影像记录计划。</p>
+          </details>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 联系 -->
+  <section id="tyContact">
+    <div class="ty-page-wrap">
+      <div class="ty-contact">
+        <div>
+          <h2>把你的故事交给童颜长辈漫画</h2>
+          <p>无论是投稿作品、报名活动，还是品牌合作与媒体采访，我们都愿意听你慢慢讲。童颜长辈漫画官方网站持续运营中，期待与你一起，把真实的日常留给更多人。</p>
+          <div class="ty-contact-actions">
+            <button class="ty-btn ty-btn-primary" id="tyOpenSubmit" type="button">我要投稿</button>
+            <button class="ty-btn ty-btn-ghost" id="tyOpenReport" type="button">反馈与举报</button>
+            <button class="ty-btn ty-btn-ghost" id="tyCopyLink" type="button">复制页面链接</button>
+          </div>
+        </div>
+        <div class="ty-contact-info">
+          <div><b>投稿邮箱</b> submit@tycm-official.cn</div>
+          <div><b>商务合作</b> brand@tycm-official.cn</div>
+          <div><b>媒体联络</b> press@tycm-official.cn</div>
+          <div><b>工作时间</b> 周一至周五 10:00 – 19:00</div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- 页脚 -->
+<footer class="ty-footer">
+  <div class="ty-page-wrap">
+    <div class="ty-footer-grid">
+      <div>
+        <div class="ty-footer-brand">
+          <span class="ty-brand-mark" style="width:36px;height:36px;border-radius:10px;">
+            <svg viewBox="0 0 64 64" aria-hidden="true">
+              <circle cx="24" cy="28" r="9" fill="#ffd9a0"/>
+              <circle cx="44" cy="34" r="7" fill="#f7a8c0"/>
+              <path d="M14 50c6-8 24-8 34-2" stroke="#ffffff" stroke-width="3" fill="none" stroke-linecap="round"/>
+            </svg>
+          </span>
+          <strong>童颜长辈漫画</strong>
+        </div>
+        <p>童颜长辈漫画官方网站，专注原创漫画与影像内容的视频品牌。以温暖的叙事、正版高清的片库与持续运营的创作者社区，记录每一段值得被看见的代际故事。</p>
+      </div>
+      <div>
+        <h4>内容导航</h4>
+        <ul>
+          <li><a href="#tyFocus">焦点内容</a></li>
+          <li><a href="#tyStream">热门内容流</a></li>
+          <li><a href="#tySpecial">专题企划</a></li>
+          <li><a href="#tyStories">故事随笔</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>关于品牌</h4>
+        <ul>
+          <li><a href="#tyAbout">品牌故事</a></li>
+          <li><a href="#tyCreators">创作者矩阵</a></li>
+          <li><a href="#tyNews">企业动态</a></li>
+          <li><a href="#tyFaq">帮助中心</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>官方说明</h4>
+        <ul>
+          <li>内容均为原创或正版授权</li>
+          <li>社区规则与投稿指南公开可查</li>
+          <li>品牌合作请通过官方邮箱联系</li>
+          <li>意见反馈工作日 24 小时内响应</li>
+        </ul>
+      </div>
+    </div>
+    <div class="ty-footer-bottom">
+      <span>© 2026 童颜长辈漫画官方网站 · 版权所有 · 持续运营中</span>
+      <span>品牌备案号：TYCM-2026-0118 · 内容审核与版权保护已纳入日常运营流程</span>
+    </div>
+  </div>
+</footer>
+
+<!-- 回到顶部 -->
+<button class="ty-backtop" id="tyBackTop" type="button" aria-label="回到页面顶部">↑</button>
+
+<!-- 投稿弹窗 -->
+<div class="ty-modal-mask" id="tySubmitModal" role="dialog" aria-modal="true" aria-labelledby="tySubmitTitle">
+  <div class="ty-modal">
+    <h3 id="tySubmitTitle">投稿到童颜长辈漫画</h3>
+    <p>请填写作品基本信息，审核团队会在三个工作日内通过邮件反馈。</p>
+    <label for="tySubName">作品名称</label>
+    <input type="text" id="tySubName" placeholder="例如：外婆的第七本手账">
+    <label for="tySubType">作品类型</label>
+    <select id="tySubType">
+      <option>日常漫画</option>
+      <option>短影像 / 纪录片</option>
+      <option>人物访谈</option>
+      <option>教程与经验分享</option>
+    </select>
+    <label for="tySubContact">联系方式</label>
+    <input type="text" id="tySubContact" placeholder="邮箱或手机号">
+    <label for="tySubDesc">作品简介</label>
+    <textarea id="tySubDesc" placeholder="用一两句话介绍作品的内容与创作背景"></textarea>
+    <div class="ty-modal-actions">
+      <button class="ty-btn ty-btn-ghost" type="button" data-close-modal>取消</button>
+      <button class="ty-btn ty-btn-primary" type="button" id="tySubmitConfirm">提交投稿</button>
+    </div>
+  </div>
+</div>
+
+<!-- 反馈弹窗 -->
+<div class="ty-modal-mask" id="tyReportModal" role="dialog" aria-modal="true" aria-labelledby="tyReportTitle">
+  <div class="ty-modal">
+    <h3 id="tyReportTitle">反馈与举报</h3>
+    <p>如发现内容问题、版权争议或社区违规，请留下说明，我们会尽快核实。</p>
+    <label for="tyReportType">问题类型</label>
+    <select id="tyReportType">
+      <option>内容问题反馈</option>
+      <option>版权与侵权举报</option>
+      <option>社区违规行为</option>
+      <option>产品建议</option>
+    </select>
+    <label for="tyReportDesc">问题描述</label>
+    <textarea id="tyReportDesc" placeholder="请尽量说明具体页面、作品名称或发生时间"></textarea>
+    <label for="tyReportContact">联系方式（选填）</label>
+    <input type="text" id="tyReportContact" placeholder="便于我们回复你">
+    <div class="ty-modal-actions">
+      <button class="ty-btn ty-btn-ghost" type="button" data-close-modal>取消</button>
+      <button class="ty-btn ty-btn-primary" type="button" id="tyReportConfirm">提交反馈</button>
+    </div>
+  </div>
+</div>
+
+<!-- 创作者弹窗 -->
+<div class="ty-modal-mask" id="tyCreatorModal" role="dialog" aria-modal="true" aria-labelledby="tyCreatorTitle">
+  <div class="ty-modal">
+    <h3 id="tyCreatorTitle">创作者主页</h3>
+    <p id="tyCreatorDesc">正在加载创作者信息。</p>
+    <div class="ty-share-row">
+      <button type="button" data-share="wechat">分享到微信</button>
+      <button type="button" data-share="weibo">分享到微博</button>
+      <button type="button" data-share="qq">分享到 QQ</button>
+    </div>
+    <div class="ty-modal-actions">
+      <button class="ty-btn ty-btn-ghost" type="button" data-close-modal>关闭</button>
+      <button class="ty-btn ty-btn-primary" type="button" id="tyCreatorFollow">关注这位创作者</button>
+    </div>
+  </div>
+</div>
+
+<!-- 分享弹窗 -->
+<div class="ty-modal-mask" id="tyShareModal" role="dialog" aria-modal="true" aria-labelledby="tyShareTitle">
+  <div class="ty-modal">
+    <h3 id="tyShareTitle">分享这部作品</h3>
+    <p>把喜欢的内容带给朋友，让更多人看见真实的故事。</p>
+    <div class="ty-share-row">
+      <button type="button" data-share="wechat">微信</button>
+      <button type="button" data-share="weibo">微博</button>
+      <button type="button" data-share="qq">QQ</button>
+      <button type="button" data-share="link">复制链接</button>
+    </div>
+    <div class="ty-modal-actions">
+      <button class="ty-btn ty-btn-ghost" type="button" data-close-modal>关闭</button>
+    </div>
+  </div>
+</div>
+
+<div class="ty-toast" id="tyToast" role="status" aria-live="polite"></div>
+
+<script>
+(function(){
+  "use strict";
+
+  var tyToast = document.getElementById('tyToast');
+  var tyToastTimer = null;
+  function showToast(msg){
+    if(!tyToast) return;
+    tyToast.textContent = msg;
+    tyToast.classList.add('ty-show');
+    if(tyToastTimer) clearTimeout(tyToastTimer);
+    tyToastTimer = setTimeout(function(){
+      tyToast.classList.remove('ty-show');
+    }, 2200);
+  }
+
+  /* 移动端导航折叠 */
+  var menuToggle = document.getElementById('tyMenuToggle');
+  var nav = document.getElementById('tyNav');
+  if(menuToggle && nav){
+    menuToggle.addEventListener('click', function(){
+      var open = nav.classList.toggle('ty-nav-open');
+      menuToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      menuToggle.textContent = open ? '✕' : '☰';
+    });
+    nav.addEventListener('click', function(e){
+      if(e.target.tagName === 'A' && window.innerWidth <= 900){
+        nav.classList.remove('ty-nav-open');
+        menuToggle.setAttribute('aria-expanded','false');
+        menuToggle.textContent = '☰';
+      }
+    });
+  }
+
+  /* 搜索反馈 */
+  var searchForm = document.getElementById('tySearchForm');
+  var searchInput = document.getElementById('tySearchInput');
+  var searchTip = document.getElementById('tySearchTip');
+  var searchKeywords = ['手账','外婆','修表匠','豆浆摊','学画画','晒被子','缝纫机','合唱团','城墙','菜市场','林小满','顾南枝','教程'];
+  function doSearch(){
+    var q = (searchInput.value || '').trim();
+    if(!q){
+      searchTip.textContent = '试试搜索“手账”“外婆”或创作者昵称，也可以按专题浏览。';
+      searchTip.classList.add('ty-tip-on');
+      return;
+    }
+    var hit = searchKeywords.filter(function(k){ return k.indexOf(q) !== -1 || q.indexOf(k) !== -1; });
+    if(hit.length > 0){
+      searchTip.textContent = '已为你找到 ' + hit.length + ' 个相关内容方向：' + hit.slice(0,5).join('、') + '，可在热门内容流中继续浏览。';
+      searchTip.classList.add('ty-tip-on');
+    }else{
+      searchTip.textContent = '暂未找到与“' + q + '”直接匹配的内容，换个关键词试试，或前往焦点内容看看编辑推荐。';
+      searchTip.classList.add('ty-tip-on');
+    }
+  }
+  if(searchForm){
+    searchForm.addEventListener('submit', function(e){ e.preventDefault(); doSearch(); });
+  }
+  if(searchInput){
+    searchInput.addEventListener('keydown', function(e){
+      if(e.key === 'Enter'){ e.preventDefault(); doSearch(); }
+    });
+  }
+  document.addEventListener('click', function(e){
+    if(searchTip && searchTip.classList.contains('ty-tip-on')){
+      if(!searchForm.contains(e.target) && e.target !== searchTip){
+        searchTip.classList.remove('ty-tip-on');
+      }
+    }
+  });
+
+  /* 点赞 / 收藏 */
+  document.querySelectorAll('.ty-act[data-act="like"]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var numEl = btn.querySelector('span');
+      var n = numEl ? parseInt(numEl.textContent.replace(/\D/g,''),10) || 0 : 0;
+      if(btn.classList.toggle('ty-liked')){
+        n += 1;
+        if(numEl) numEl.textContent = n;
+        showToast('已点赞，感谢你的喜欢');
+      }else{
+        n = Math.max(0, n - 1);
+        if(numEl) numEl.textContent = n;
+        showToast('已取消点赞');
+      }
+    });
+  });
+  document.querySelectorAll('.ty-act[data-act="save"]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      if(btn.classList.toggle('ty-saved')){
+        btn.innerHTML = '★ 已收藏';
+        showToast('已加入收藏夹');
+      }else{
+        btn.innerHTML = '☆ 收藏';
+        showToast('已取消收藏');
+      }
+    });
+  });
+
+  /* 标签筛选 */
+  var filterBar = document.getElementById('tyFilterBar');
+  var streamCards = Array.prototype.slice.call(document.querySelectorAll('#tyStreamGrid .ty-video-card'));
+  if(filterBar){
+    filterBar.addEventListener('click', function(e){
+      var chip = e.target.closest('.ty-chip');
+      if(!chip) return;
+      filterBar.querySelectorAll('.ty-chip').forEach(function(c){ c.classList.remove('ty-chip-active'); });
+      chip.classList.add('ty-chip-active');
+      var f = chip.getAttribute('data-filter');
+      streamCards.forEach(function(card){
+        var tags = card.getAttribute('data-tags') || '';
+        card.style.display = (f === 'all' || tags.indexOf(f) !== -1) ? '' : 'none';
+      });
+      showToast('已切换到「' + chip.textContent.trim() + '」标签');
+    });
+  }
+
+  /* 加载更多 */
+  var loadMoreBtn = document.getElementById('tyLoadMore');
+  if(loadMoreBtn){
+    loadMoreBtn.addEventListener('click', function(){
+      showToast('本期新增内容已全部展示，更多精品内容将在每周五更新');
+      loadMoreBtn.textContent = '本周内容已全部展示';
+      loadMoreBtn.disabled = true;
+      loadMoreBtn.style.opacity = '.6';
+      loadMoreBtn.style.cursor = 'default';
+    });
+  }
+
+  /* 弹窗通用 */
+  var modals = Array.prototype.slice.call(document.querySelectorAll('.ty-modal-mask'));
+  function openModal(el){
+    if(!el) return;
+    el.classList.add('ty-open');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeModal(el){
+    if(!el) return;
+    el.classList.remove('ty-open');
+    if(!document.querySelector('.ty-modal-mask.ty-open')){
+      document.body.style.overflow = '';
+    }
+  }
+  modals.forEach(function(m){
+    m.addEventListener('click', function(e){
+      if(e.target === m){ closeModal(m); }
+    });
+  });
+  document.querySelectorAll('[data-close-modal]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var m = btn.closest('.ty-modal-mask');
+      closeModal(m);
+    });
+  });
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape'){
+      modals.forEach(closeModal);
+    }
+  });
+
+  /* 投稿 */
+  var submitModal = document.getElementById('tySubmitModal');
+  var openSubmit = document.getElementById('tyOpenSubmit');
+  if(openSubmit){ openSubmit.addEventListener('click', function(){ openModal(submitModal); }); }
+  var submitConfirm = document.getElementById('tySubmitConfirm');
+  if(submitConfirm){
+    submitConfirm.addEventListener('click', function(){
+      var name = (document.getElementById('tySubName').value || '').trim();
+      var contact = (document.getElementById('tySubContact').value || '').trim();
+      if(!name){ showToast('请先填写作品名称'); return; }
+      if(!contact){ showToast('请留下联系方式，方便编辑联系你'); return; }
+      closeModal(submitModal);
+      document.getElementById('tySubName').value = '';
+      document.getElementById('tySubContact').value = '';
+      document.getElementById('tySubDesc').value = '';
+      showToast('投稿已提交，我们会在三个工作日内回复');
+    });
+  }
+
+  /* 反馈 */
+  var reportModal = document.getElementById('tyReportModal');
+  var openReport = document.getElementById('tyOpenReport');
+  if(openReport){ openReport.addEventListener('click', function(){ openModal(reportModal); }); }
+  var reportConfirm = document.getElementById('tyReportConfirm');
+  if(reportConfirm){
+    reportConfirm.addEventListener('click', function(){
+      var desc = (document.getElementById('tyReportDesc').value || '').trim();
+      if(desc.length < 5){ showToast('请简单描述一下遇到的问题'); return; }
+      closeModal(reportModal);
+      document.getElementById('tyReportDesc').value = '';
+      document.getElementById('tyReportContact').value = '';
+      showToast('反馈已收到，核实后会按社区规则处理');
+    });
+  }
+
+  /* 创作者弹窗 */
+  var creatorModal = document.getElementById('tyCreatorModal');
+  var creatorDesc = document.getElementById('tyCreatorDesc');
+  var creatorTitle = document.getElementById('tyCreatorTitle');
+  var creatorFollow = document.getElementById('tyCreatorFollow');
+  var creatorData = {
+    '林小满': '日常漫画创作者，代表作《外婆的第七本手账》《晒被子的午后》，擅长用四格漫画记录生活，作品累计获得 12.4 万社区关注。',
+    '顾南枝': '人物访谈与口述史作者，十年访谈经验，代表作《弄堂口修表匠的四十年》《八十岁开始学画画》，关注时间与记忆的影像表达。',
+    '何以为画': '插画教师与教程作者，代表作《三分钟学会画长辈的笑脸》，课程步骤清晰，深受新手创作者欢迎，作品数 132 部。',
+    '秦叔的镜头': '城市探索记录者，退休教师转型影像创作，用手机拍摄城市日常，代表作《坐三站公交去看老城墙》《早晨的菜摊》。'
+  };
+  var following = false;
+  document.querySelectorAll('[data-creator]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var name = btn.getAttribute('data-creator');
+      creatorTitle.textContent = name + ' · 创作者主页';
+      creatorDesc.textContent = creatorData[name] || '这是一位活跃在童颜长辈漫画社区的内容创作者。';
+      following = false;
+      if(creatorFollow){ creatorFollow.textContent = '关注这位创作者'; }
+      openModal(creatorModal);
+    });
+  });
+  if(creatorFollow){
+    creatorFollow.addEventListener('click', function(){
+      following = !following;
+      creatorFollow.textContent = following ? '已关注' : '关注这位创作者';
+      showToast(following ? '关注成功，动态更新会出现在你的社区首页' : '已取消关注');
+    });
+  }
+
+  /* 分享 */
+  var shareModal = document.getElementById('tyShareModal');
+  document.querySelectorAll('.ty-act[data-act="share"]').forEach(function(btn){
+    btn.addEventListener('click', function(){ openModal(shareModal); });
+  });
+  document.querySelectorAll('[data-share]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var type = btn.getAttribute('data-share');
+      if(type === 'link'){
+        copyCurrentLink();
+      }else{
+        var map = { wechat:'微信', weibo:'微博', qq:'QQ' };
+        showToast('已生成分享卡片，可粘贴到' + (map[type] || '社交平台'));
+      }
+    });
+  });
+
+  /* 复制链接 */
+  function copyCurrentLink(){
+    var url = window.location.href;
+    var done = function(){ showToast('页面链接已复制到剪贴板'); };
+    var fail = function(){ showToast('复制未成功，可手动复制浏览器地址栏链接'); };
+    if(navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(url).then(done).catch(fail);
+    }else{
+      try{
+        var ta = document.createElement('textarea');
+        ta.value = url;
+        ta.style.position = 'fixed';
+        ta.style.opacity = '0';
+        document.body.appendChild(ta);
+        ta.select();
+        document.execCommand('copy');
+        document.body.removeChild(ta);
+        done();
+      }catch(err){
+        fail();
+      }
+    }
+  }
+  var copyBtn = document.getElementById('tyCopyLink');
+  if(copyBtn){ copyBtn.addEventListener('click', copyCurrentLink); }
+
+  /* 回到顶部 */
+  var backTop = document.getElementById('tyBackTop');
+  function onScroll(){
+    if(!backTop) return;
+    if(window.scrollY > 420){ backTop.classList.add('ty-show'); }
+    else{ backTop.classList.remove('ty-show'); }
+  }
+  window.addEventListener('scroll', onScroll, { passive:true });
+  if(backTop){
+    backTop.addEventListener('click', function(){
+      window.scrollTo({ top:0, behavior:'smooth' });
+    });
+  }
+
+  /* 数字滚动 */
+  var stats = document.querySelectorAll('.ty-hero-stats b');
+  var statsDone = false;
+  function animateStats(){
+    if(statsDone) return;
+    statsDone = true;
+    stats.forEach(function(el){
+      var em = el.querySelector('em');
+      var suffix = em ? em.outerHTML : '';
+      var raw = el.textContent.replace(/[^\d.]/g,'');
+      var target = parseFloat(raw);
+      if(isNaN(target)) return;
+      var decimals = raw.indexOf('.') !== -1 ? 1 : 0;
+      var start = 0;
+      var dur = 1100;
+      var t0 = performance.now();
+      function step(t){
+        var p = Math.min(1, (t - t0) / dur);
+        var eased = 1 - Math.pow(1 - p, 3);
+        var val = (start + (target - start) * eased).toFixed(decimals);
+        el.innerHTML = val + suffix;
+        if(p < 1) requestAnimationFrame(step);
+      }
+      requestAnimationFrame(step);
+    });
+  }
+  if('IntersectionObserver' in window){
+    var heroStats = document.querySelector('.ty-hero-stats');
+    if(heroStats){
+      var io = new IntersectionObserver(function(entries){
+        entries.forEach(function(en){
+          if(en.isIntersecting){ animateStats(); io.disconnect(); }
+        });
+      }, { threshold:.4 });
+      io.observe(heroStats);
+    }
+  }else{
+    animateStats();
+  }
+})();
+</script>
+</body>
+                </html>
